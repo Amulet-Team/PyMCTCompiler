@@ -88,8 +88,8 @@ def main(nbt):
                 text_1, text_2, text_3, text_4 = unpack_text(front_text_tag)
 
     return [
-        ["", "compound", [], "Text1", ["string", text_1]],
-        ["", "compound", [], "Text2", ["string", text_2]],
-        ["", "compound", [], "Text3", ["string", text_3]],
-        ["", "compound", [], "Text4", ["string", text_4]],
+        ["", "compound", [], "Text1", text_1],
+        ["", "compound", [], "Text2", text_2],
+        ["", "compound", [], "Text3", text_3],
+        ["", "compound", [], "Text4", text_4],
     ]
