@@ -67,13 +67,27 @@ hanging_universal = {
 _J19 = TranslationFile(
     [
         {
+            "function": "walk_input_nbt",
+            "options": {
+                "type": "compound",
+                "keys": {
+                    "Text1": {"type": "string"},
+                    "Text2": {"type": "string"},
+                    "Text3": {"type": "string"},
+                    "Text4": {"type": "string"},
+                },
+                "self_default": [{"function": "carry_nbt", "options": {}}],
+                "nested_default": [{"function": "carry_nbt", "options": {}}],
+            },
+        },
+        {
             "function": "code",
             "options": {
                 "input": ["nbt"],
                 "output": ["new_nbt"],
                 "function": "java_sign_2u_19",
             },
-        }
+        },
     ],
     [
         {
@@ -123,13 +137,33 @@ _J120 = NBTRemapHelper(
 _J120_text = TranslationFile(
     [
         {
+            "function": "walk_input_nbt",
+            "options": {
+                "type": "compound",
+                "keys": {
+                    "front_text": {
+                        "type": "compound",
+                        "keys": {"messages": {"type": "list"}},
+                        "nested_default": [{"function": "carry_nbt", "options": {}}],
+                    },
+                    "back_text": {
+                        "type": "compound",
+                        "keys": {"messages": {"type": "list"}},
+                        "nested_default": [{"function": "carry_nbt", "options": {}}],
+                    },
+                },
+                "self_default": [{"function": "carry_nbt", "options": {}}],
+                "nested_default": [{"function": "carry_nbt", "options": {}}],
+            },
+        },
+        {
             "function": "code",
             "options": {
                 "input": ["nbt"],
                 "output": ["new_nbt"],
                 "function": "java_sign_2u_120",
             },
-        }
+        },
     ],
     [
         {
@@ -149,13 +183,33 @@ _J120_text = TranslationFile(
 _J1215_text = TranslationFile(
     [
         {
+            "function": "walk_input_nbt",
+            "options": {
+                "type": "compound",
+                "keys": {
+                    "front_text": {
+                        "type": "compound",
+                        "keys": {"messages": {"type": "list"}},
+                        "nested_default": [{"function": "carry_nbt", "options": {}}],
+                    },
+                    "back_text": {
+                        "type": "compound",
+                        "keys": {"messages": {"type": "list"}},
+                        "nested_default": [{"function": "carry_nbt", "options": {}}],
+                    },
+                },
+                "self_default": [{"function": "carry_nbt", "options": {}}],
+                "nested_default": [{"function": "carry_nbt", "options": {}}],
+            },
+        },
+        {
             "function": "code",
             "options": {
                 "input": ["nbt"],
                 "output": ["new_nbt"],
                 "function": "java_sign_2u_1215",
             },
-        }
+        },
     ],
     [
         {
