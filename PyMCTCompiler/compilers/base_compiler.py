@@ -22,7 +22,10 @@ class BaseCompiler:
         directory: str,
         *,
         parent_version: str | None = None,
-        block_format: Literal["numerical", "blockstate", "pseudo-numerical", "nbt-blockstate"] | None = None,
+        block_format: (
+            Literal["numerical", "blockstate", "pseudo-numerical", "nbt-blockstate"]
+            | None
+        ) = None,
         block_entity_format: Literal["namespace-str-id", "str-id"] | None = None,
         block_entity_coord_format: Literal["xyz-int"] | None = None,
         entity_format: Literal["namespace-str-id", "str-id"] | None = None,

@@ -28,10 +28,10 @@ java_align_items_to_bottom = NBTRemapHelper(
     [
         (
             ("align_items_to_bottom", "byte", []),
-            ("align_items_to_bottom", "byte", [("utags", "compound")])
+            ("align_items_to_bottom", "byte", [("utags", "compound")]),
         )
     ],
-    "{align_items_to_bottom: 0b}"
+    "{align_items_to_bottom: 0b}",
 )
 
 j121 = merge(

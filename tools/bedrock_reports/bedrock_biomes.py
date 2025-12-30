@@ -26,7 +26,7 @@ def main():
     dmp = MinidumpFile.parse(r"D:\Data\minecraft\bedrock_memory\1.18.DMP")
     dmp_reader = dmp.get_reader()
     biomes = {}
-    biome_data_locations = dmp_reader.search(b"\x68\x7F\xFF\x06")
+    biome_data_locations = dmp_reader.search(b"\x68\x7f\xff\x06")
     for index in biome_data_locations:
         biome_name = get_string(dmp_reader.read(index + 4, 64))
         if id_chrs.fullmatch(biome_name) is None:

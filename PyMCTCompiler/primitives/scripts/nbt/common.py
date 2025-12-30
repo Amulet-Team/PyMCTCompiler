@@ -73,10 +73,10 @@ java_components = NBTRemapHelper(
     [
         (
             ("components", "compound", []),
-            ("components", "compound", [("utags", "compound")])
+            ("components", "compound", [("utags", "compound")]),
         )
     ],
-    "{components: {}}"
+    "{components: {}}",
 )
 
 bedrock_furnace_base = NBTRemapHelper(

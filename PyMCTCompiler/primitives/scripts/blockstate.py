@@ -151,7 +151,7 @@ def _snbt_spec_from_hex(
             )
             payload.append(nested_obj)
         return name, {"type": "list", "val": payload}, nbt_bin
-    elif nbt_type == b"\x0A":
+    elif nbt_type == b"\x0a":
         payload = {}
         nested_obj = _snbt_spec_from_hex(nbt_bin, endianness)
         while nested_obj is not None:
@@ -160,7 +160,7 @@ def _snbt_spec_from_hex(
             nested_obj = _snbt_spec_from_hex(nbt_bin, endianness)
         nbt_bin = nbt_bin[1:]
         return name, {"type": "compound", "val": payload}, nbt_bin
-    elif nbt_type == b"\x0B":
+    elif nbt_type == b"\x0b":
         array_length = struct.unpack(f"{endianness}i", nbt_bin[:4])[0]
         payload = list(
             struct.unpack(
@@ -169,7 +169,7 @@ def _snbt_spec_from_hex(
         )
         nbt_bin = nbt_bin[4 + array_length * 4 :]
         return name, {"type": "int_array", "val": payload}, nbt_bin
-    elif nbt_type == b"\x0C":
+    elif nbt_type == b"\x0c":
         array_length = struct.unpack(f"{endianness}i", nbt_bin[:4])[0]
         payload = list(
             struct.unpack(
@@ -205,11 +205,11 @@ def _nbt_mapping_from_hex(nbt_bin: bytes):
         return {"type": "string", "functions": {"carry_nbt": {}}}
     elif nbt_bin.startswith(b"\x09"):
         return {"walk_input_nbt": {"type": "list", "functions": {"carry_nbt": {}}}}
-    elif nbt_bin.startswith(b"\x0A"):
+    elif nbt_bin.startswith(b"\x0a"):
         return {"walk_input_nbt": {"type": "compound", "functions": {"carry_nbt": {}}}}
-    elif nbt_bin.startswith(b"\x0B"):
+    elif nbt_bin.startswith(b"\x0b"):
         return {"walk_input_nbt": {"type": "int_array", "functions": {"carry_nbt": {}}}}
-    elif nbt_bin.startswith(b"\x0C"):
+    elif nbt_bin.startswith(b"\x0c"):
         return {
             "walk_input_nbt": {"type": "long_array", "functions": {"carry_nbt": {}}}
         }
