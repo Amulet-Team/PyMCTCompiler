@@ -142,7 +142,11 @@ class NBTRemapHelper(TranslationFile):
         ]
 
         for remap in remaps:
-            (input_key, input_type, input_path), (
+            (
+                input_key,
+                input_type,
+                input_path,
+            ), (
                 output_key,
                 output_type,
                 output_path,
