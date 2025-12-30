@@ -158,7 +158,7 @@ def direct_data(
 
 
 def _iter_properties(
-    properties: Dict[str, Dict[int, str]]
+    properties: Dict[str, Dict[int, str]],
 ) -> Generator[Tuple[int, Dict[str, str]], None, None]:
     states = itertools.product(
         *[
