@@ -64,58 +64,28 @@ hanging_universal = {
     "snbt": "{}",
 }
 
-_J19 = NBTRemapHelper(
+_J19 = TranslationFile(
     [
-        (
-            ("Text1", "string", []),
-            (
-                0,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            ("Text2", "string", []),
-            (
-                1,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            ("Text3", "string", []),
-            (
-                2,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            ("Text4", "string", []),
-            (
-                3,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_2u_19",
+            },
+        }
     ],
-    '{Text4: "{\\"text\\":\\"\\"}", Text3: "{\\"text\\":\\"\\"}", Text2: "{\\"text\\":\\"\\"}", Text1: "{\\"text\\":\\"\\"}"}',
+    [
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_fu_19",
+            },
+        }
+    ],
+    {"snbt": r'{Text1: "\"\"", Text2: "\"\"", Text3: "\"\"", Text4: "\"\""}'},
 )
 
 
@@ -135,54 +105,6 @@ _J120 = NBTRemapHelper(
             ("color", "string", [("utags", "compound"), ("front_text", "compound")]),
         ),
         (
-            (0, "string", [("front_text", "compound"), ("messages", "list")]),
-            (
-                0,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (1, "string", [("front_text", "compound"), ("messages", "list")]),
-            (
-                1,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (2, "string", [("front_text", "compound"), ("messages", "list")]),
-            (
-                2,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (3, "string", [("front_text", "compound"), ("messages", "list")]),
-            (
-                3,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("front_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
             ("has_glowing_text", "byte", [("back_text", "compound")]),
             (
                 "has_glowing_text",
@@ -194,56 +116,60 @@ _J120 = NBTRemapHelper(
             ("color", "string", [("back_text", "compound")]),
             ("color", "string", [("utags", "compound"), ("back_text", "compound")]),
         ),
-        (
-            (0, "string", [("back_text", "compound"), ("messages", "list")]),
-            (
-                0,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("back_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (1, "string", [("back_text", "compound"), ("messages", "list")]),
-            (
-                1,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("back_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (2, "string", [("back_text", "compound"), ("messages", "list")]),
-            (
-                2,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("back_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
-        (
-            (3, "string", [("back_text", "compound"), ("messages", "list")]),
-            (
-                3,
-                "string",
-                [
-                    ("utags", "compound"),
-                    ("back_text", "compound"),
-                    ("messages", "list"),
-                ],
-            ),
-        ),
     ],
-    '{back_text: {has_glowing_text: 0b, color: "black", messages: ["{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}"]}, is_waxed: 0b, front_text: {has_glowing_text: 0b, color: "black", messages: ["{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}", "{\\"text\\":\\"\\"}"]}}',
+    '{back_text: {has_glowing_text: 0b, color: "black"}, is_waxed: 0b, front_text: {has_glowing_text: 0b, color: "black"}}',
+)
+
+_J120_text = TranslationFile(
+    [
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_2u_120",
+            },
+        }
+    ],
+    [
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_fu_120",
+            },
+        }
+    ],
+    {
+        "snbt": r'{back_text: {messages: ["\"\"", "\"\"", "\"\"", "\"\""]}, front_text: {messages: ["\"\"", "\"\"", "\"\"", "\"\""]}}'
+    },
+)
+
+_J1215_text = TranslationFile(
+    [
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_2u_1215",
+            },
+        }
+    ],
+    [
+        {
+            "function": "code",
+            "options": {
+                "input": ["nbt"],
+                "output": ["new_nbt"],
+                "function": "java_sign_fu_1215",
+            },
+        }
+    ],
+    {
+        "snbt": r'{back_text: {messages: ["", "", "", ""]}, front_text: {messages: ["", "", "", ""]}}'
+    },
 )
 
 _B17 = NBTRemapHelper(
@@ -429,21 +355,42 @@ wall_hanging_j119 = merge(
 )
 
 j120 = merge(
-    [EmptyNBT("minecraft:sign"), _J120, java_keep_packed], ["universal_minecraft:sign"]
+    [EmptyNBT("minecraft:sign"), _J120, _J120_text, java_keep_packed],
+    ["universal_minecraft:sign"],
 )
 
 wall_j120 = merge(
-    [EmptyNBT("minecraft:sign"), _J120, java_keep_packed],
+    [EmptyNBT("minecraft:sign"), _J120, _J120_text, java_keep_packed],
     ["universal_minecraft:wall_sign"],
 )
 
 hanging_j120 = merge(
-    [EmptyNBT("minecraft:hanging_sign"), _J120, java_keep_packed],
+    [EmptyNBT("minecraft:hanging_sign"), _J120, _J120_text, java_keep_packed],
     ["universal_minecraft:hanging_sign"],
 )
 
 wall_hanging_j120 = merge(
-    [EmptyNBT("minecraft:hanging_sign"), _J120, java_keep_packed],
+    [EmptyNBT("minecraft:hanging_sign"), _J120, _J120_text, java_keep_packed],
+    ["universal_minecraft:wall_hanging_sign"],
+)
+
+j1215 = merge(
+    [EmptyNBT("minecraft:sign"), _J120, _J1215_text, java_keep_packed],
+    ["universal_minecraft:sign"],
+)
+
+wall_j1215 = merge(
+    [EmptyNBT("minecraft:sign"), _J120, _J1215_text, java_keep_packed],
+    ["universal_minecraft:wall_sign"],
+)
+
+hanging_j1215 = merge(
+    [EmptyNBT("minecraft:hanging_sign"), _J120, _J1215_text, java_keep_packed],
+    ["universal_minecraft:hanging_sign"],
+)
+
+wall_hanging_j1215 = merge(
+    [EmptyNBT("minecraft:hanging_sign"), _J120, _J1215_text, java_keep_packed],
     ["universal_minecraft:wall_hanging_sign"],
 )
 
