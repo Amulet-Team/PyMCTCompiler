@@ -5319,6 +5319,15 @@ def command_block(
                                                             for data7, facing in directions.items()
                                                         }
                                                     },
+                                                },
+                                                {
+                                                    "function": "new_nbt",
+                                                    "options": [
+                                                        {
+                                                            "key": "conditionalMode",
+                                                            "value": "1b" if data8 else "0b"
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                             for data8, conditional in {

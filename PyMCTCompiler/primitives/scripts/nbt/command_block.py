@@ -123,6 +123,7 @@ _B113 = NBTRemapHelper(
             ("auto", "byte", [("utags", "compound")]),
         ),
         (("Command", "string", []), ("Command", "string", [("utags", "compound")])),
+        (("conditionalMode", "byte", []), (None, None, None)),
         (
             ("conditionMet", "byte", []),
             ("conditionMet", "byte", [("utags", "compound")]),
