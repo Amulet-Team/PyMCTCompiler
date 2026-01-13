@@ -1,3 +1,5 @@
+from typing import Callable, Iterable
+
 from PyMCTCompiler.primitives.scripts.nbt import (
     NBTRemapHelper,
     TranslationFile,
@@ -412,91 +414,77 @@ _J19 = TranslationFile(
     },
 )
 
-def get_player_translation_file(tag_name: str, universal_name: str, func_name: str) -> TranslationFile:
-    return TranslationFile(
-        [
-            {
-                "function": "walk_input_nbt",
-                "options": {
-                    "type": "compound",
-                    "keys": {
-                        tag_name: {
-                            "type": "compound",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": [
-                                            [
-                                                "utags",
-                                                "compound"
-                                            ]
-                                        ],
-                                        "key": universal_name
+def get_player_translation_file(tag_name: str, universal_name: str, func_name: str, default_block: str) -> Callable[[Iterable[str]], TranslationFile]:
+    def get(universal_names: Iterable[str]) -> TranslationFile:
+        return TranslationFile(
+            [
+                {
+                    "function": "walk_input_nbt",
+                    "options": {
+                        "type": "compound",
+                        "keys": {
+                            tag_name: {
+                                "type": "compound",
+                                "functions": [
+                                    {
+                                        "function": "carry_nbt",
+                                        "options": {
+                                            "path": [
+                                                [
+                                                    "utags",
+                                                    "compound"
+                                                ]
+                                            ],
+                                            "key": universal_name
+                                        }
                                     }
-                                }
-                            ]
-                        }
-                    },
-                },
-            }
-        ],
-        {
-            "universal_minecraft:head": [
-                {
-                    "function": "map_properties",
-                    "options": {
-                        "mob": {
-                            '"player"': [
-                                {
-                                    "function": "code",
-                                    "options": {
-                                        "input": ["nbt"],
-                                        "output": ["new_nbt"],
-                                        "function": func_name,
-                                    },
-                                }
-                            ]
-                        }
+                                ]
+                            }
+                        },
                     },
                 }
             ],
-            "universal_minecraft:wall_head": [
-                {
-                    "function": "map_properties",
-                    "options": {
-                        "mob": {
-                            '"player"': [
-                                {
-                                    "function": "code",
-                                    "options": {
-                                        "input": ["nbt"],
-                                        "output": ["new_nbt"],
-                                        "function": func_name,
-                                    },
-                                }
-                            ]
-                        }
-                    },
-                }
-            ],
-        },
-    )
+            {
+                name: [
+                    {'function': 'new_block', 'options': default_block},
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "mob": {
+                                '"player"': [
+                                    {
+                                        "function": "code",
+                                        "options": {
+                                            "input": ["nbt"],
+                                            "output": ["new_nbt"],
+                                            "function": func_name,
+                                        },
+                                    }
+                                ]
+                            }
+                        },
+                    }
+                ]
+                for name in universal_names
+            },
+        )
+    return get
 
-_Player_J19 = get_player_translation_file("Owner", "owner_j19", "java_skull_fu_19")
+
+_Player_J19 = get_player_translation_file("Owner", "owner_j19", "java_skull_fu_19", "minecraft:skull")
 
 # 2514 (1.16 snapshot)
 # Renamed Owner -> SkullOwner
 # SkullOwner[Id] string converted to list[int, 4]
-_Player_J116 = get_player_translation_file("SkullOwner", "owner_j116", "java_skull_fu_116")
+_Player_J116 = get_player_translation_file("SkullOwner", "owner_j116", "java_skull_fu_116", "minecraft:skeleton_skull")
 
 # 3818 (1.20.5 snapshot)
 # Renamed SkullOwner -> profile
 # Properties -> properties and refactored
-_Player_J1205 = get_player_translation_file("profile", "owner_j1205", "java_skull_fu_1215")
+_Player_J1205 = get_player_translation_file("profile", "owner_j1205", "java_skull_fu_1215", "minecraft:skeleton_skull")
 
 j19 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J19, _J19],
+    [EmptyNBT("minecraft:skull"), _Player_J19(["universal_minecraft:head", "universal_minecraft:wall_head"]), _J19],
     ["universal_minecraft:head", "universal_minecraft:wall_head"],
     abstract=True,
 )
@@ -511,29 +499,29 @@ wall_j113 = merge(
 )
 
 player_j113 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J19, java_keep_packed], ["universal_minecraft:head"]
+    [EmptyNBT("minecraft:skull"), _Player_J19(["universal_minecraft:head"]), java_keep_packed], ["universal_minecraft:head"]
 )
 
 player_wall_j113 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J19, java_keep_packed],
+    [EmptyNBT("minecraft:skull"), _Player_J19(["universal_minecraft:wall_head"]), java_keep_packed],
     ["universal_minecraft:wall_head"],
 )
 
 player_j116 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J116, java_keep_packed], ["universal_minecraft:head"]
+    [EmptyNBT("minecraft:skull"), _Player_J116(["universal_minecraft:head"]), java_keep_packed], ["universal_minecraft:head"]
 )
 
 player_wall_j116 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J116, java_keep_packed],
+    [EmptyNBT("minecraft:skull"), _Player_J116(["universal_minecraft:wall_head"]), java_keep_packed],
     ["universal_minecraft:wall_head"],
 )
 
 player_j1205 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J1205, java_keep_packed], ["universal_minecraft:head"]
+    [EmptyNBT("minecraft:skull"), _Player_J1205(["universal_minecraft:head"]), java_keep_packed], ["universal_minecraft:head"]
 )
 
 player_wall_j1205 = merge(
-    [EmptyNBT("minecraft:skull"), _Player_J1205, java_keep_packed],
+    [EmptyNBT("minecraft:skull"), _Player_J1205(["universal_minecraft:wall_head"]), java_keep_packed],
     ["universal_minecraft:wall_head"],
 )
 
