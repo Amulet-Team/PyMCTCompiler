@@ -41,38 +41,51 @@ def convert_properties(tag: CompoundTag):
         tag["Properties"] = new_properties_tag
 
 
+def downgrade_name(tag: CompoundTag):
+    name_tag = tag.pop("name", None)
+    if isinstance(name_tag, StringTag):
+        tag["Name"] = name_tag
+
+
 def main(nbt):
     if isinstance(nbt, CompoundTag):
         utags = nbt.get("utags")
         if isinstance(utags, CompoundTag):
-            owner_j19 = utags.get("owner_j19")
-            if isinstance(owner_j19, CompoundTag):
-                convert_uuid(owner_j19)
-                return [
-                    "",
-                    "compound",
-                    [],
-                    "SkullOwner",
-                    owner_j19,
-                ]
             owner_j116 = utags.get("owner_j116")
             if isinstance(owner_j116, CompoundTag):
                 return [
-                    "",
-                    "compound",
-                    [],
-                    "SkullOwner",
-                    owner_j116,
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "SkullOwner",
+                        owner_j116,
+                    ]
                 ]
             owner_j1205 = utags.get("owner_j1205")
             if isinstance(owner_j1205, CompoundTag):
                 convert_properties(owner_j1205)
+                downgrade_name(owner_j1205)
                 return [
-                    "",
-                    "compound",
-                    [],
-                    "SkullOwner",
-                    owner_j1205,
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "SkullOwner",
+                        owner_j1205,
+                    ]
+                ]
+            owner_j19 = utags.get("owner_j19")
+            if isinstance(owner_j19, CompoundTag):
+                convert_uuid(owner_j19)
+                return [
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "SkullOwner",
+                        owner_j19,
+                    ]
                 ]
 
     return []

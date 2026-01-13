@@ -41,6 +41,12 @@ def convert_properties(tag: CompoundTag):
         tag["Properties"] = new_properties_tag
 
 
+def downgrade_name(tag: CompoundTag):
+    name_tag = tag.pop("name", None)
+    if isinstance(name_tag, StringTag):
+        tag["Name"] = name_tag
+
+
 def main(nbt):
     if isinstance(nbt, CompoundTag):
         utags = nbt.get("utags")
@@ -48,33 +54,40 @@ def main(nbt):
             owner_j19 = utags.get("owner_j19")
             if isinstance(owner_j19, CompoundTag):
                 return [
-                    "",
-                    "compound",
-                    [],
-                    "Owner",
-                    owner_j19,
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "Owner",
+                        owner_j19,
+                    ]
                 ]
             owner_j116 = utags.get("owner_j116")
             if isinstance(owner_j116, CompoundTag):
                 # convert list[int, 4] to uuid
                 convert_uuid(owner_j116)
                 return [
-                    "",
-                    "compound",
-                    [],
-                    "Owner",
-                    owner_j116,
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "Owner",
+                        owner_j116,
+                    ]
                 ]
             owner_j1205 = utags.get("owner_j1205")
             if isinstance(owner_j1205, CompoundTag):
                 convert_uuid(owner_j1205)
                 convert_properties(owner_j1205)
+                downgrade_name(owner_j1205)
                 return [
-                    "",
-                    "compound",
-                    [],
-                    "Owner",
-                    owner_j1205,
+                    [
+                        "",
+                        "compound",
+                        [],
+                        "Owner",
+                        owner_j1205,
+                    ]
                 ]
 
     return []

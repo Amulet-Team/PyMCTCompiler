@@ -385,7 +385,7 @@ _J19 = TranslationFile(
                         f'"{rot}"': [
                             {
                                 "function": "new_nbt",
-                                "options": [{"key": "Rotation", "value": f"{rot}b"}],
+                                "options": [{"key": "Rot", "value": f"{rot}b"}],
                             }
                         ]
                         for rot in range(16)
