@@ -12,12 +12,14 @@ def convert_uuid(tag: CompoundTag):
             pass
         else:
             uuid_int = uuid_.int
-            tag["Id"] = ListTag([
-                IntTag((uuid_int >> 96) & 0xFFFFFFFF),
-                IntTag((uuid_int >> 64) & 0xFFFFFFFF),
-                IntTag((uuid_int >> 32) & 0xFFFFFFFF),
-                IntTag(uuid_int & 0xFFFFFFFF),
-            ])
+            tag["Id"] = ListTag(
+                [
+                    IntTag((uuid_int >> 96) & 0xFFFFFFFF),
+                    IntTag((uuid_int >> 64) & 0xFFFFFFFF),
+                    IntTag((uuid_int >> 32) & 0xFFFFFFFF),
+                    IntTag(uuid_int & 0xFFFFFFFF),
+                ]
+            )
 
 
 def convert_properties(tag: CompoundTag):
@@ -30,12 +32,12 @@ def convert_properties(tag: CompoundTag):
                 value = prop_tag.get("value")
                 signature = prop_tag.get("signature")
                 if isinstance(name, StringTag) and isinstance(value, StringTag):
-                    new_prop_tag = CompoundTag({
-                        "Value": value
-                    })
+                    new_prop_tag = CompoundTag({"Value": value})
                     if isinstance(signature, StringTag):
                         new_prop_tag["Signature"] = signature
-                    new_properties_tag.setdefault(name.py_str, ListTag()).append(new_prop_tag)
+                    new_properties_tag.setdefault(name.py_str, ListTag()).append(
+                        new_prop_tag
+                    )
         tag["Properties"] = new_properties_tag
 
 

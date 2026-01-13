@@ -5325,10 +5325,12 @@ def command_block(
                                                     "options": [
                                                         {
                                                             "key": "conditionalMode",
-                                                            "value": "1b" if data8 else "0b"
+                                                            "value": (
+                                                                "1b" if data8 else "0b"
+                                                            ),
                                                         }
-                                                    ]
-                                                }
+                                                    ],
+                                                },
                                             ]
                                             for data8, conditional in {
                                                 0: '"false"',

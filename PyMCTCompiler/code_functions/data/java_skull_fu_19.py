@@ -5,10 +5,21 @@ from amulet_nbt import CompoundTag, ListTag, IntTag, StringTag
 
 def convert_uuid(tag: CompoundTag):
     id_tag = tag.pop("Id", None)
-    if isinstance(id_tag, ListTag) and id_tag.list_data_type == IntTag.tag_id and len(id_tag) == 4:
-        tag["Id"] = StringTag(str(uuid.UUID(
-            int=((id_tag[0] & 0xFFFFFFFF) << 96) | ((id_tag[1] & 0xFFFFFFFF) << 64) | ((id_tag[2] & 0xFFFFFFFF) << 32) | (id_tag[3] & 0xFFFFFFFF)
-        )))
+    if (
+        isinstance(id_tag, ListTag)
+        and id_tag.list_data_type == IntTag.tag_id
+        and len(id_tag) == 4
+    ):
+        tag["Id"] = StringTag(
+            str(
+                uuid.UUID(
+                    int=((id_tag[0] & 0xFFFFFFFF) << 96)
+                    | ((id_tag[1] & 0xFFFFFFFF) << 64)
+                    | ((id_tag[2] & 0xFFFFFFFF) << 32)
+                    | (id_tag[3] & 0xFFFFFFFF)
+                )
+            )
+        )
 
 
 def convert_properties(tag: CompoundTag):
@@ -21,12 +32,12 @@ def convert_properties(tag: CompoundTag):
                 value = prop_tag.get("value")
                 signature = prop_tag.get("signature")
                 if isinstance(name, StringTag) and isinstance(value, StringTag):
-                    new_prop_tag = CompoundTag({
-                        "Value": value
-                    })
+                    new_prop_tag = CompoundTag({"Value": value})
                     if isinstance(signature, StringTag):
                         new_prop_tag["Signature"] = signature
-                    new_properties_tag.setdefault(name.py_str, ListTag()).append(new_prop_tag)
+                    new_properties_tag.setdefault(name.py_str, ListTag()).append(
+                        new_prop_tag
+                    )
         tag["Properties"] = new_properties_tag
 
 
