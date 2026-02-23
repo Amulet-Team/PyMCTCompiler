@@ -76,5 +76,8 @@
 	"mossy_cobblestone_wall": "mossy_cobblestone_wall_16",
 	"mossy_stone_brick_wall": "mossy_stone_brick_wall_16",
 	"nether_brick_wall": "nether_brick_wall_16",
-	"prismarine_wall": "prismarine_wall_16"
+	"prismarine_wall": "prismarine_wall_16",
+
+	"player_head": [">nbt.skull.player_j116", "player_head"],
+	"player_wall_head": [">nbt.skull.player_wall_j116", "player_wall_head"]
 }

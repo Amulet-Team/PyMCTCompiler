@@ -1,4 +1,7 @@
 {
 	"trial_spawner": [">nbt.trial_spawner.j21", "trial_spawner"],
-	"vault": [">nbt.vault.j21", "vault"]
+	"vault": [">nbt.vault.j21", "vault"],
+
+	"player_head": [">nbt.skull.player_j1205", "player_head_1_20_2"],
+	"player_wall_head": [">nbt.skull.player_wall_j1205", "player_wall_head_1_20_2"]
 }
