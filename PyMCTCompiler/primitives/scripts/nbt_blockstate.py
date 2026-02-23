@@ -689,10 +689,10 @@ def door_12160(block_name: str, material: str) -> dict:
         block_name,
         material,
         "minecraft:cardinal_direction",
-        '"north"',
         '"east"',
         '"south"',
         '"west"',
+        '"north"',
     )
 
 
