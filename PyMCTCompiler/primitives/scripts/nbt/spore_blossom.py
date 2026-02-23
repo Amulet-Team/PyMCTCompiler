@@ -1,7 +1,6 @@
 from PyMCTCompiler.primitives.scripts.nbt import EmptyNBT, merge
 from .common import bedrock_is_movable
 
-
 universal = {
     "nbt_identifier": ["universal_minecraft", "spore_blossom"],
     "snbt": """{
