@@ -12,7 +12,6 @@ from PyMCTCompiler.disk_buffer import disk_buffer
 from PyMCTCompiler.translation_functions.base_translation_function import FunctionList
 from PyMCTCompiler.translation_functions import NewBlock
 
-
 Unloaded = object()
 
 
