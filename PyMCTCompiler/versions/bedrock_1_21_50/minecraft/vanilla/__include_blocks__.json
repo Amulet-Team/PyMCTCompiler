@@ -37,5 +37,7 @@
     "pale_hanging_moss": "pale_hanging_moss",
     "pale_moss_block": "pale_moss_block",
     "pale_moss_carpet": "pale_moss_carpet",
-    "resin_clump": "resin_clump"
+    "resin_clump": "resin_clump",
+
+    "flower_pot": ["flower_pot", ">nbt.flower_pot.b12150"]
 }
