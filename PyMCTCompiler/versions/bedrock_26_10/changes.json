@@ -1,0 +1,8 @@
+{
+    "minecraft:golden_dandelion": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    }
+}
