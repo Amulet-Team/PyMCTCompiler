@@ -3,7 +3,7 @@ import os
 
 compiler = NBTBlockstateCompiler(
     os.path.dirname(__file__),
-    version=[26, 10],
+    version=[26, 10, 0],
     version_max_known=[26, 10],
     version_max=[100, -1],
     parent_version="bedrock_1_21_110",
