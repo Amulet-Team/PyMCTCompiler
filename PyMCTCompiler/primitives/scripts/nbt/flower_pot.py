@@ -413,7 +413,7 @@ b_blockstate_plants_12080 = {
 }
 
 b_blockstate_plants_121 = {
-    '"fern"': ("minecraft:fern", '{}', 18153475),
+    '"fern"': ("minecraft:fern", "{}", 18153475),
 }
 
 b_blockstate_plants_12120 = {
