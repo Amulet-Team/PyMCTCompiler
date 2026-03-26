@@ -134,5 +134,6 @@
     "mossy_stone_bricks": "mossy_stone_bricks",
 
     "yellow_flower": null,
-    "dandelion": "dandelion"
+    "dandelion": "dandelion",
+    "flower_pot": ["flower_pot", ">nbt.flower_pot.b12120"]
 }

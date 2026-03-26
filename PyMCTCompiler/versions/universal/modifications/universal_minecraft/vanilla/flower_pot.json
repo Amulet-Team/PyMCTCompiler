@@ -37,7 +37,8 @@
 		"potted_torchflower",
 		"potted_pale_oak_sapling",
 		"potted_closed_eyeblossom",
-		"potted_open_eyeblossom"
+		"potted_open_eyeblossom",
+		"potted_golden_dandelion"
 	],
 	"add": {
 		"flower_pot": {
@@ -78,9 +79,10 @@
 					"\"mangrove_propagule\"",
 					"\"cherry_sapling\"",
 					"\"torchflower\"",
-					"\"pale_oak\"",
+					"\"pale_oak_sapling\"",
 					"\"closed_eyeblossom\"",
-					"\"open_eyeblossom\""
+					"\"open_eyeblossom\"",
+					"\"golden_dandelion\""
 				],
 				"update": [
 					"\"false\"",

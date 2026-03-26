@@ -1,0 +1,4 @@
+{
+	"golden_dandelion": "golden_dandelion",
+	"flower_pot": ["flower_pot", ">nbt.flower_pot.b2610"]
+}

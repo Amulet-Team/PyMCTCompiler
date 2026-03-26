@@ -95,5 +95,7 @@
 	"waxed_weathered_cut_copper_slab": "waxed_weathered_cut_copper_slab_19",
 	"waxed_weathered_double_cut_copper_slab": "waxed_weathered_double_cut_copper_slab_19",
 	"weathered_cut_copper_slab": "weathered_cut_copper_slab_19",
-	"weathered_double_cut_copper_slab": "weathered_double_cut_copper_slab_19"
+	"weathered_double_cut_copper_slab": "weathered_double_cut_copper_slab_19",
+
+	"flower_pot": ["flower_pot", ">nbt.flower_pot.b119"]
 }

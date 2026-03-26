@@ -38,5 +38,7 @@
     "spruce_sapling": "spruce_sapling",
     "cherry_sapling": "cherry_sapling_2080",
 
-    "heavy_core": "heavy_core"
+    "heavy_core": "heavy_core",
+
+    "flower_pot": ["flower_pot", ">nbt.flower_pot.b12080"]
 }
