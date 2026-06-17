@@ -1,0 +1,16 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:potent_sulfur"
+        }
+    ],
+    "from_universal": {
+        "universal_minecraft:potent_sulfur": [
+            {
+                "function": "new_block",
+                "options": "minecraft:potent_sulfur"
+            }
+        ]
+    }
+}

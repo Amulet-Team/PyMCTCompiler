@@ -33,5 +33,7 @@
     "polished_cinnabar": "polished_cinnabar",
     "polished_sulfur": "polished_sulfur",
     "sulfur": "sulfur",
-    "sulfur_bricks": "sulfur_bricks"
+    "sulfur_bricks": "sulfur_bricks",
+
+    "potent_sulfur": ["potent_sulfur_26_20", ">nbt.potent_sulfur.b2620"]
 }

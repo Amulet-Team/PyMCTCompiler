@@ -1,0 +1,22 @@
+{
+	"remove": [
+		"potent_sulfur"
+	],
+	"add": {
+		"potent_sulfur": {
+			"properties": {
+				"potent_sulfur_state": [
+					"\"dry\"",
+					"\"wet\"",
+					"\"dormant\"",
+					"\"erupting\"",
+					"\"continuous\""
+				]
+			},
+			"defaults": {
+				"potent_sulfur_state": "\"dry\""
+			},
+			"unbt": "nbt.potent_sulfur.universal"
+		}
+	}
+}

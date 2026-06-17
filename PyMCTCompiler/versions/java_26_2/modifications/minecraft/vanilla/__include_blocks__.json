@@ -18,5 +18,7 @@
     "polished_cinnabar_wall": "polished_cinnabar_wall",
     "polished_sulfur_wall": "polished_sulfur_wall",
     "sulfur_brick_wall": "sulfur_brick_wall",
-    "sulfur_wall": "sulfur_wall"
+    "sulfur_wall": "sulfur_wall",
+
+    "potent_sulfur": ["potent_sulfur", ">nbt.potent_sulfur.j262"]
 }
