@@ -24,5 +24,14 @@
     "polished_cinnabar_wall": ["polished_cinnabar_wall", "wall_connections_16"],
     "polished_sulfur_wall": ["polished_sulfur_wall", "wall_connections_16"],
     "sulfur_brick_wall": ["sulfur_brick_wall", "wall_connections_16"],
-    "sulfur_wall": ["sulfur_wall", "wall_connections_16"]
+    "sulfur_wall": ["sulfur_wall", "wall_connections_16"],
+
+    "chiseled_cinnabar": "chiseled_cinnabar",
+    "chiseled_sulfur": "chiseled_sulfur",
+    "cinnabar": "cinnabar",
+    "cinnabar_bricks": "cinnabar_bricks",
+    "polished_cinnabar": "polished_cinnabar",
+    "polished_sulfur": "polished_sulfur",
+    "sulfur": "sulfur",
+    "sulfur_bricks": "sulfur_bricks"
 }
