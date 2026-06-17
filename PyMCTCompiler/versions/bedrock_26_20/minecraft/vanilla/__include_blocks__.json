@@ -5,4 +5,17 @@
     "polished_sulfur_stairs": "polished_sulfur_stairs",
     "sulfur_brick_stairs": "sulfur_brick_stairs",
     "sulfur_stairs": "sulfur_stairs",
+
+    "cinnabar_brick_double_slab": "cinnabar_brick_double_slab",
+    "cinnabar_brick_slab": "cinnabar_brick_slab",
+    "cinnabar_double_slab": "cinnabar_double_slab",
+    "cinnabar_slab": "cinnabar_slab",
+    "polished_cinnabar_double_slab": "polished_cinnabar_double_slab",
+    "polished_cinnabar_slab": "polished_cinnabar_slab",
+    "polished_sulfur_double_slab": "polished_sulfur_double_slab",
+    "polished_sulfur_slab": "polished_sulfur_slab",
+    "sulfur_brick_double_slab": "sulfur_brick_double_slab",
+    "sulfur_brick_slab": "sulfur_brick_slab",
+    "sulfur_double_slab": "sulfur_double_slab",
+    "sulfur_slab": "sulfur_slab"
 }
