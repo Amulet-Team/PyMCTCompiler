@@ -1,0 +1,554 @@
+{
+    "minecraft:chiseled_cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:chiseled_sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar_brick_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_brick_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_brick_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_brick_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_bricks": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:polished_cinnabar_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:polished_sulfur_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:potent_sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:sulfur_brick_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_bricks": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:sulfur_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_stairs": {
+        "block_added": {
+            "defaults": {
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_wall": {
+        "block_added": {
+            "defaults": {
+                "wall_connection_type_east": "\"none\"",
+                "wall_connection_type_north": "\"none\"",
+                "wall_connection_type_south": "\"none\"",
+                "wall_connection_type_west": "\"none\"",
+                "wall_post_bit": "0b"
+            },
+            "properties": {
+                "wall_connection_type_east": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_north": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_south": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_connection_type_west": [
+                    "\"none\"",
+                    "\"short\"",
+                    "\"tall\""
+                ],
+                "wall_post_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    }
+}
