@@ -1,0 +1,1 @@
+blockstate.material_helper("minecraft", "sulfur_brick_slab", "\"sulfur_brick\"", "universal_minecraft", "slab", {"type": ["\"top\"","\"bottom\"","\"double\""]}, default="minecraft:stone_slab")

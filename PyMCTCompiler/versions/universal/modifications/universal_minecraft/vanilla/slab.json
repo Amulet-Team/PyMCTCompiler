@@ -61,7 +61,13 @@
 		"tuff_brick_slab",
 		"polished_tuff_slab",
 		"pale_oak_slab",
-		"resin_brick_slab"
+		"resin_brick_slab",
+		"cinnabar_brick_slab",
+		"cinnabar_slab",
+		"polished_cinnabar_slab",
+		"polished_sulfur_slab",
+		"sulfur_brick_slab",
+		"sulfur_slab"
 	],
 	"add": {
 		"slab": {
@@ -128,7 +134,13 @@
 					"\"tuff_brick\"",
 					"\"polished_tuff\"",
 					"\"pale_oak\"",
-					"\"resin_brick\""
+					"\"resin_brick\"",
+					"\"cinnabar_brick\"",
+					"\"cinnabar\"",
+					"\"polished_cinnabar\"",
+					"\"polished_sulfur\"",
+					"\"sulfur_brick\"",
+					"\"sulfur\""
 				],
 				"type": [
 					"\"top\"",

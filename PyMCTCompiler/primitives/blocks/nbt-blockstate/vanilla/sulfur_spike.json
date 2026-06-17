@@ -1,0 +1,146 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:sulfur_spike"
+        },
+        {
+            "function": "map_properties",
+            "options": {
+                "dripstone_thickness": {
+                    "\"tip\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "thickness": "\"tip\""
+                            }
+                        }
+                    ],
+                    "\"frustum\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "thickness": "\"frustum\""
+                            }
+                        }
+                    ],
+                    "\"middle\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "thickness": "\"middle\""
+                            }
+                        }
+                    ],
+                    "\"base\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "thickness": "\"base\""
+                            }
+                        }
+                    ],
+                    "\"merge\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "thickness": "\"tip_merge\""
+                            }
+                        }
+                    ]
+                },
+                "hanging": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "vertical_direction": "\"up\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "vertical_direction": "\"down\""
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "from_universal": {
+        "universal_minecraft:sulfur_spike": [
+            {
+                "function": "new_block",
+                "options": "minecraft:sulfur_spike"
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "thickness": {
+                        "\"tip\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "dripstone_thickness": "\"tip\""
+                                }
+                            }
+                        ],
+                        "\"frustum\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "dripstone_thickness": "\"frustum\""
+                                }
+                            }
+                        ],
+                        "\"middle\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "dripstone_thickness": "\"middle\""
+                                }
+                            }
+                        ],
+                        "\"base\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "dripstone_thickness": "\"base\""
+                                }
+                            }
+                        ],
+                        "\"tip_merge\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "dripstone_thickness": "\"merge\""
+                                }
+                            }
+                        ]
+                    },
+                    "vertical_direction": {
+                        "\"up\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "hanging": "0b"
+                                }
+                            }
+                        ],
+                        "\"down\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "vertical_direction": "1b"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

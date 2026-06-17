@@ -1,0 +1,34 @@
+{
+    "minecraft:potent_sulfur": {
+        "properties_added": {
+            "potent_sulfur_state": [
+                "\"dry\"",
+                "\"wet\"",
+                "\"dormant\"",
+                "\"erupting\"",
+                "\"continuous\""
+            ]
+        }
+    },
+    "minecraft:sulfur_spike": {
+        "block_added": {
+            "defaults": {
+                "dripstone_thickness": "\"tip\"",
+                "hanging": "0b"
+            },
+            "properties": {
+                "dripstone_thickness": [
+                    "\"tip\"",
+                    "\"frustum\"",
+                    "\"middle\"",
+                    "\"base\"",
+                    "\"merge\""
+                ],
+                "hanging": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    }
+}

@@ -25,7 +25,13 @@
 		"tuff_wall",
 		"tuff_brick_wall",
 		"polished_tuff_wall",
-		"resin_brick_wall"
+		"resin_brick_wall",
+		"cinnabar_brick_wall",
+		"cinnabar_wall",
+		"polished_cinnabar_wall",
+		"polished_sulfur_wall",
+		"sulfur_brick_wall",
+		"sulfur_wall"
 	],
 	"add": {
 		"wall": {
@@ -56,7 +62,13 @@
 					"\"tuff\"",
 					"\"tuff_brick\"",
 					"\"polished_tuff\"",
-					"\"resin_brick\""
+					"\"resin_brick\"",
+					"\"cinnabar_brick\"",
+					"\"cinnabar\"",
+					"\"polished_cinnabar\"",
+					"\"polished_sulfur\"",
+					"\"sulfur_brick\"",
+					"\"sulfur\""
 				],
 				"east": [
 					"\"none\"",

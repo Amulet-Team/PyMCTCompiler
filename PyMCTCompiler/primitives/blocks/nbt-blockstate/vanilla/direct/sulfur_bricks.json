@@ -1,0 +1,16 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:sulfur_bricks"
+        }
+    ],
+    "from_universal": {
+        "universal_minecraft:sulfur_bricks": [
+            {
+                "function": "new_block",
+                "options": "minecraft:sulfur_bricks"
+            }
+        ]
+    }
+}

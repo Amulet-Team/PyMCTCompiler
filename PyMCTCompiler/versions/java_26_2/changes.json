@@ -1,0 +1,656 @@
+{
+    "minecraft:chiseled_cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:chiseled_sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar_brick_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_brick_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_brick_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_bricks": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:cinnabar_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:cinnabar_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:polished_cinnabar_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_cinnabar_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:polished_sulfur_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_sulfur_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    },
+    "minecraft:potent_sulfur": {
+        "block_added": {
+            "defaults": {
+                "potent_sulfur_state": "dry"
+            },
+            "properties": {
+                "potent_sulfur_state": [
+                    "dry",
+                    "wet",
+                    "dormant",
+                    "erupting",
+                    "continuous"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:sulfur_brick_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_bricks": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:sulfur_slab": {
+        "block_added": {
+            "defaults": {
+                "type": "bottom",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "type": [
+                    "top",
+                    "bottom",
+                    "double"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_spike": {
+        "block_added": {
+            "defaults": {
+                "thickness": "tip",
+                "vertical_direction": "up",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "thickness": [
+                    "tip_merge",
+                    "tip",
+                    "frustum",
+                    "middle",
+                    "base"
+                ],
+                "vertical_direction": [
+                    "up",
+                    "down"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_stairs": {
+        "block_added": {
+            "defaults": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight",
+                "waterlogged": "false"
+            },
+            "properties": {
+                "facing": [
+                    "north",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "half": [
+                    "top",
+                    "bottom"
+                ],
+                "shape": [
+                    "straight",
+                    "inner_left",
+                    "inner_right",
+                    "outer_left",
+                    "outer_right"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_wall": {
+        "block_added": {
+            "defaults": {
+                "east": "none",
+                "north": "none",
+                "south": "none",
+                "up": "true",
+                "waterlogged": "false",
+                "west": "none"
+            },
+            "properties": {
+                "east": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "north": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "south": [
+                    "none",
+                    "low",
+                    "tall"
+                ],
+                "up": [
+                    "true",
+                    "false"
+                ],
+                "waterlogged": [
+                    "true",
+                    "false"
+                ],
+                "west": [
+                    "none",
+                    "low",
+                    "tall"
+                ]
+            }
+        }
+    }
+}

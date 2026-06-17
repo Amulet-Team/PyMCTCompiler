@@ -1,0 +1,12 @@
+{
+	"add": {
+		"biomes": {
+			"minecraft:sulfur_caves": [
+				null,
+				"universal_minecraft:sulfur_caves"
+			]
+		},
+		"universal_remap": {}
+	},
+	"remove": []
+}

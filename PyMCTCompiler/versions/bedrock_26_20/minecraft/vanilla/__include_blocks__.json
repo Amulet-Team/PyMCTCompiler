@@ -1,0 +1,39 @@
+{
+    "cinnabar_brick_stairs": "cinnabar_brick_stairs",
+    "cinnabar_stairs": "cinnabar_stairs",
+    "polished_cinnabar_stairs": "polished_cinnabar_stairs",
+    "polished_sulfur_stairs": "polished_sulfur_stairs",
+    "sulfur_brick_stairs": "sulfur_brick_stairs",
+    "sulfur_stairs": "sulfur_stairs",
+
+    "cinnabar_brick_double_slab": "cinnabar_brick_double_slab",
+    "cinnabar_brick_slab": "cinnabar_brick_slab",
+    "cinnabar_double_slab": "cinnabar_double_slab",
+    "cinnabar_slab": "cinnabar_slab",
+    "polished_cinnabar_double_slab": "polished_cinnabar_double_slab",
+    "polished_cinnabar_slab": "polished_cinnabar_slab",
+    "polished_sulfur_double_slab": "polished_sulfur_double_slab",
+    "polished_sulfur_slab": "polished_sulfur_slab",
+    "sulfur_brick_double_slab": "sulfur_brick_double_slab",
+    "sulfur_brick_slab": "sulfur_brick_slab",
+    "sulfur_double_slab": "sulfur_double_slab",
+    "sulfur_slab": "sulfur_slab",
+
+    "cinnabar_brick_wall": ["cinnabar_brick_wall", "wall_connections_16"],
+    "cinnabar_wall": ["cinnabar_wall", "wall_connections_16"],
+    "polished_cinnabar_wall": ["polished_cinnabar_wall", "wall_connections_16"],
+    "polished_sulfur_wall": ["polished_sulfur_wall", "wall_connections_16"],
+    "sulfur_brick_wall": ["sulfur_brick_wall", "wall_connections_16"],
+    "sulfur_wall": ["sulfur_wall", "wall_connections_16"],
+
+    "chiseled_cinnabar": "chiseled_cinnabar",
+    "chiseled_sulfur": "chiseled_sulfur",
+    "cinnabar": "cinnabar",
+    "cinnabar_bricks": "cinnabar_bricks",
+    "polished_cinnabar": "polished_cinnabar",
+    "polished_sulfur": "polished_sulfur",
+    "sulfur": "sulfur",
+    "sulfur_bricks": "sulfur_bricks",
+
+    "potent_sulfur": ["potent_sulfur_26_20", ">nbt.potent_sulfur.b2620"]
+}
