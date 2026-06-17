@@ -11,5 +11,12 @@
     "polished_cinnabar_slab": "polished_cinnabar_slab",
     "polished_sulfur_slab": "polished_sulfur_slab",
     "sulfur_brick_slab": "sulfur_brick_slab",
-    "sulfur_slab": "sulfur_slab"
+    "sulfur_slab": "sulfur_slab",
+
+    "cinnabar_brick_wall": "cinnabar_brick_wall",
+    "cinnabar_wall": "cinnabar_wall",
+    "polished_cinnabar_wall": "polished_cinnabar_wall",
+    "polished_sulfur_wall": "polished_sulfur_wall",
+    "sulfur_brick_wall": "sulfur_brick_wall",
+    "sulfur_wall": "sulfur_wall"
 }
