@@ -1564,3 +1564,93 @@ def double_slab(material: str, block_id: str):
             ]
         },
     }
+
+def stairs(block_name: str, *, material: str | None = None):
+    if material is None:
+        material = block_name
+    facing_states = [("0", "\"east\""), ("1", "\"west\""), ("2", "\"south\""), ("3", "\"north\"")]
+    half_states = [("0b", "\"bottom\""), ("1b", "\"top\"")]
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": "universal_minecraft:stairs"
+            },
+            {
+                "function": "new_properties",
+                "options": {
+                    "material": f"\"{material}\"",
+                }
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "upside_down_bit": {
+                        upside_down_bit: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "half": half
+                                }
+                            }
+                        ]
+                        for upside_down_bit, half in half_states
+                    },
+                    "weirdo_direction": {
+                        weirdo_direction: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "facing": facing
+                                }
+                            }
+                        ]
+                        for weirdo_direction, facing in facing_states
+                    }
+                }
+            }
+        ],
+        "from_universal": {
+            "universal_minecraft:stairs": [
+                {
+                    "function": "new_block",
+                    "options": "minecraft:oak_stairs"
+                },
+                {
+                    "function": "map_properties",
+                    "options": {
+                        "material": {
+                            f"\"{material}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name}_stairs"
+                                }
+                            ]
+                        },
+                        "half": {
+                            half: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "upside_down_bit": upside_down_bit
+                                    }
+                                }
+                            ]
+                            for upside_down_bit, half in half_states
+                        },
+                        "facing": {
+                            facing: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "weirdo_direction": weirdo_direction
+                                    }
+                                }
+                            ]
+                            for weirdo_direction, facing in facing_states
+                        }
+                    }
+                }
+            ]
+        }
+    }
