@@ -5,6 +5,7 @@ import os
 import glob
 import json
 import copy
+import re
 
 import PyMCTCompiler
 from PyMCTCompiler.helpers import log_to_file
@@ -189,8 +190,10 @@ class BaseCompiler:
                 namespace, sub_name = include_file.split(os.sep)[-3:-1]
                 try:
                     with open(include_file) as f:
-                        include_file_data = json.load(f)
-                except json.JSONDecodeError:
+                        include_file_s = f.read()
+                        include_file_s = re.sub(r"^//.*$", "", include_file_s, flags=re.MULTILINE)
+                    include_file_data = json.loads(include_file_s)
+                except Exception:
                     print(f"Could not parse json file {include_file}.")
                     raise
                 assert isinstance(include_file_data, dict)
