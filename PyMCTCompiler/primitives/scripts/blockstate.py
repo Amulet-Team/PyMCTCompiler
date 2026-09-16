@@ -285,6 +285,8 @@ def colour(
     universal_namespace: str = None,
     universal_block_name: str = None,
     carry_properties: Dict[str, List[str]] = None,
+    *,
+    extra_materials: tuple[str] = ()
 ) -> dict:
     for col in (
         "black_",
@@ -303,6 +305,7 @@ def colour(
         "red_",
         "white_",
         "yellow_",
+        *extra_materials,
         "",
     ):
         if input_block_name.startswith(col):
