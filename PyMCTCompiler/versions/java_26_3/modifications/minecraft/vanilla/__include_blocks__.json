@@ -69,5 +69,9 @@
     "purple_wool_stairs": "purple_wool_stairs",
     "red_wool_stairs": "red_wool_stairs",
     "white_wool_stairs": "white_wool_stairs",
-    "yellow_wool_stairs": "yellow_wool_stairs"
+    "yellow_wool_stairs": "yellow_wool_stairs",
+
+    "yellow_poplar_leaves": "yellow_poplar_leaves",
+    "orange_poplar_leaves": "orange_poplar_leaves",
+    "red_poplar_leaves": "red_poplar_leaves"
 }
