@@ -73,5 +73,27 @@
 
     "yellow_poplar_leaves": "yellow_poplar_leaves",
     "orange_poplar_leaves": "orange_poplar_leaves",
-    "red_poplar_leaves": "red_poplar_leaves"
+    "red_poplar_leaves": "red_poplar_leaves",
+
+    "poplar_button": "poplar_button",
+    "poplar_door": "poplar_door",
+    "poplar_fence": "poplar_fence",
+    "poplar_fence_gate": "poplar_fence_gate",
+    "poplar_sign": "poplar_sign",
+    "poplar_hanging_sign": "poplar_hanging_sign",
+    "poplar_wall_sign": "poplar_wall_sign",
+    "poplar_wall_hanging_sign": "poplar_wall_hanging_sign",
+    "poplar_log": "poplar_log",
+    "stripped_poplar_log": "stripped_poplar_log",
+    "poplar_wood": "poplar_wood",
+    "stripped_poplar_wood": "stripped_poplar_wood",
+    "poplar_planks": "poplar_planks",
+    "poplar_pressure_plate": "poplar_pressure_plate",
+    "poplar_sapling": "poplar_sapling",
+    "poplar_shelf": "poplar_shelf",
+    "poplar_trapdoor": "poplar_trapdoor",
+    "potted_poplar_sapling": "potted_poplar_sapling",
+
+    "red_shrub": "red_shrub",
+    "straw_bed": "straw_bed"
 }

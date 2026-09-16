@@ -38,7 +38,8 @@
 		"potted_pale_oak_sapling",
 		"potted_closed_eyeblossom",
 		"potted_open_eyeblossom",
-		"potted_golden_dandelion"
+		"potted_golden_dandelion",
+		"potted_poplar_sapling"
 	],
 	"add": {
 		"flower_pot": {
@@ -82,7 +83,8 @@
 					"\"pale_oak_sapling\"",
 					"\"closed_eyeblossom\"",
 					"\"open_eyeblossom\"",
-					"\"golden_dandelion\""
+					"\"golden_dandelion\"",
+					"\"poplar\""
 				],
 				"update": [
 					"\"false\"",

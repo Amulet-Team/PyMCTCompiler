@@ -11,7 +11,8 @@
 		"warped_shelf",
 		"bamboo_shelf",
 		"cherry_shelf",
-		"pale_oak_shelf"
+		"pale_oak_shelf",
+		"poplar_shelf"
 	],
 	"add": {
 		"shelf": {
@@ -28,7 +29,8 @@
 					"\"warped\"",
 					"\"bamboo\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"poplar\""
 				],
 				"facing": [
 					"\"north\"",

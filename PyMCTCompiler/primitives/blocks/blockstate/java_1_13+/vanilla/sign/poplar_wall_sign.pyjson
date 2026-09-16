@@ -1,0 +1,1 @@
+blockstate.material_helper("minecraft", "poplar_wall_sign", "\"poplar\"", "universal_minecraft", "wall_sign", {"facing": ["\"north\"","\"south\"","\"west\"","\"east\""]}, default="minecraft:oak_wall_sign")

@@ -15,7 +15,8 @@
 		"brown_bed",
 		"green_bed",
 		"red_bed",
-		"black_bed"
+		"black_bed",
+		"straw_bed"
 	],
 	"add": {
 		"bed": {
@@ -36,7 +37,8 @@
 					"\"brown\"",
 					"\"green\"",
 					"\"red\"",
-					"\"black\""
+					"\"black\"",
+					"\"straw\""
 				],
 				"facing": [
 					"\"north\"",
