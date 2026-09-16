@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("granite", shape=True)

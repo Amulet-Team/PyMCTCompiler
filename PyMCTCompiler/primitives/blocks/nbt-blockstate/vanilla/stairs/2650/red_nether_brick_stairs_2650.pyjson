@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("red_nether_brick", shape=True)

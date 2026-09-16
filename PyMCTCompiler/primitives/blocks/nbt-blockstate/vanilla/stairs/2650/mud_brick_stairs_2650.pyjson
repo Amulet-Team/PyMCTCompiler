@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("mud_brick", shape=True)

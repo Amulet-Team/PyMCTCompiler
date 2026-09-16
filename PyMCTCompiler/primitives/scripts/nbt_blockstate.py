@@ -1565,11 +1565,19 @@ def double_slab(material: str, block_id: str):
         },
     }
 
-def stairs(block_name: str, *, material: str | None = None):
+def stairs(block_name: str, *, material: str | None = None, shape: bool = False):
     if material is None:
         material = block_name
     facing_states = [("0", "\"east\""), ("1", "\"west\""), ("2", "\"south\""), ("3", "\"north\"")]
     half_states = [("0b", "\"bottom\""), ("1b", "\"top\"")]
+    shape_states = [
+        ("\"none\"", "\"straight\""),
+        ("\"inner_left\"", "\"inner_left\""),
+        ("\"inner_right\"", "\"inner_right\""),
+        ("\"outer_left\"", "\"outer_left\""),
+        ("\"outer_right\"",  "\"outer_right\""),
+    ]
+
     return {
         "to_universal": [
             {
@@ -1606,7 +1614,22 @@ def stairs(block_name: str, *, material: str | None = None):
                             }
                         ]
                         for weirdo_direction, facing in facing_states
-                    }
+                    },
+                    **(
+                        {
+                            "minecraft:corner": {
+                                corner: [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "shape": shape
+                                        }
+                                    }
+                                ]
+                                for corner, shape in shape_states
+                            }
+                        } if shape else {}
+                    )
                 }
             }
         ],
@@ -1648,7 +1671,22 @@ def stairs(block_name: str, *, material: str | None = None):
                                 }
                             ]
                             for weirdo_direction, facing in facing_states
-                        }
+                        },
+                        **(
+                            {
+                                "shape": {
+                                    shape: [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "minecraft:corner": corner
+                                            }
+                                        }
+                                    ]
+                                    for corner, shape in shape_states
+                                }
+                            } if shape else {}
+                        )
                     }
                 }
             ]
