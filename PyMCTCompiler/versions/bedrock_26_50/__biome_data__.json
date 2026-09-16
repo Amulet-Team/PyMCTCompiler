@@ -2,7 +2,7 @@
 	"add": {
 		"biomes": {
 			"minecraft:dappled_forest": [
-				null,
+				195,
 				"universal_minecraft:dappled_forest"
 			]
 		},
