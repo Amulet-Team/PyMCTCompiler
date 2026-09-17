@@ -223,5 +223,9 @@
     "waxed_exposed_copper_bars": "waxed_exposed_copper_bars_2650",
     "waxed_oxidized_copper_bars": "waxed_oxidized_copper_bars_2650",
     "waxed_weathered_copper_bars": "waxed_weathered_copper_bars_2650",
-    "weathered_copper_bars": "weathered_copper_bars_2650"
+    "weathered_copper_bars": "weathered_copper_bars_2650",
+
+    "yellow_poplar_leaves": "yellow_poplar_leaves",
+    "orange_poplar_leaves": "orange_poplar_leaves",
+    "red_poplar_leaves": "red_poplar_leaves"
 }

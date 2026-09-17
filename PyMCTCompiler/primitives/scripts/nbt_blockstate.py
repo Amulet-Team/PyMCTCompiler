@@ -1820,3 +1820,117 @@ def bars(material: str, shape: bool = False):
         block_name_material=BlockNameMaterial(f"{material}_bars", "material", material),
         shape=shape
     )
+
+def leaves(default_block: str, block_name: str, material: str):
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": "universal_minecraft:leaves"
+            },
+            {
+                "function": "new_properties",
+                "options": {
+                    "material": f"\"{material}\""
+                }
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "persistent_bit": {
+                        "0b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "persistent": "\"false\""
+                                }
+                            }
+                        ],
+                        "1b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "persistent": "\"true\""
+                                }
+                            }
+                        ]
+                    },
+                    "update_bit": {
+                        "0b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "check_decay": "\"false\""
+                                }
+                            }
+                        ],
+                        "1b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "check_decay": "\"true\""
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "from_universal": {
+            "universal_minecraft:leaves": [
+                {
+                    "function": "new_block",
+                    "options": f"minecraft:{default_block}"
+                },
+                {
+                    "function": "map_properties",
+                    "options": {
+                        "material": {
+                            f"\"{material}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name}"
+                                }
+                            ]
+                        },
+                        "persistent": {
+                            "\"false\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "persistent_bit": "0b"
+                                    }
+                                }
+                            ],
+                            "\"true\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "persistent_bit": "1b"
+                                    }
+                                }
+                            ]
+                        },
+                        "check_decay": {
+                            "\"false\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "update_bit": "0b"
+                                    }
+                                }
+                            ],
+                            "\"true\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "update_bit": "1b"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
