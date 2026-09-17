@@ -240,5 +240,7 @@
     "poplar_log": "poplar_log",
     "poplar_wood": "poplar_wood",
     "stripped_poplar_log": "stripped_poplar_log",
-    "stripped_poplar_wood": "stripped_poplar_wood"
+    "stripped_poplar_wood": "stripped_poplar_wood",
+
+    "trip_wire": "trip_wire_2650"
 }

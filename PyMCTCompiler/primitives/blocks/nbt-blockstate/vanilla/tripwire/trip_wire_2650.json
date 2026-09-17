@@ -1,0 +1,314 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:tripwire"
+        },
+        {
+            "function": "map_properties",
+            "options": {
+                "attached_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "attached": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "attached": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "disarmed_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "disarmed": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "disarmed": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "powered_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "powered": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "powered": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "suspended_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "suspended": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "suspended": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "minecraft:connection_east": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "east": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "east": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "minecraft:connection_north": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "north": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "north": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "minecraft:connection_south": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "south": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "south": "\"true\""
+                            }
+                        }
+                    ]
+                },
+                "minecraft:connection_west": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "west": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "west": "\"true\""
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "from_universal": {
+        "universal_minecraft:tripwire": [
+            {
+                "function": "new_block",
+                "options": "minecraft:trip_wire"
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "attached": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "attached_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "attached_bit": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "disarmed": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "disarmed_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "disarmed_bit": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "powered": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "powered_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "powered_bit": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "suspended": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "suspended_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "suspended_bit": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "east": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_east": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_east": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "north": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_north": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_north": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "south": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_south": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_south": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "west": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_west": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:connection_west": "1b"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
