@@ -1706,7 +1706,24 @@ def fence(block_name: str, material: str, default_block: str, *, shape: bool = F
                     "material": f"\"{material}\""
                 }
             }
-        ],
+        ] + ([
+            {
+                "function": "map_properties",
+                "options": {
+                    f"minecraft:connection_{direction}": {
+                        b: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    direction: j
+                                }
+                            }
+                        ]
+                        for b, j in [("0b", "\"false\""), ("1b", "\"true\"")]
+                    } for direction in ("north", "east", "south", "west")
+                }
+            }
+        ] if shape else []),
         "from_universal": {
             "universal_minecraft:fence": [
                 {
@@ -1724,7 +1741,19 @@ def fence(block_name: str, material: str, default_block: str, *, shape: bool = F
                                 }
                             ]
                         }
-                    }
+                    } | ({
+                        direction: {
+                            j: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        f"minecraft:connection_{direction}": b
+                                    }
+                                }
+                            ]
+                            for b, j in [("0b", "\"false\""), ("1b", "\"true\"")]
+                        } for direction in ("north", "east", "south", "west")
+                    } if shape else {})
                 }
             ]
         }

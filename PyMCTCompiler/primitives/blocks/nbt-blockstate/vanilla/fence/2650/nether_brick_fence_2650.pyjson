@@ -1,0 +1,1 @@
+nbt_blockstate.fence("nether_brick_fence", "nether_brick", "oak_fence", shape=True)
