@@ -1692,3 +1692,40 @@ def stairs(block_name: str, *, material: str | None = None, shape: bool = False)
             ]
         }
     }
+
+def fence(block_name: str, material: str, default_block: str, *, shape: bool = False):
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": "universal_minecraft:fence"
+            },
+            {
+                "function": "new_properties",
+                "options": {
+                    "material": f"\"{material}\""
+                }
+            }
+        ],
+        "from_universal": {
+            "universal_minecraft:fence": [
+                {
+                    "function": "new_block",
+                    "options": f"minecraft:{default_block}"
+                },
+                {
+                    "function": "map_properties",
+                    "options": {
+                        "material": {
+                            f"\"{material}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name}"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
