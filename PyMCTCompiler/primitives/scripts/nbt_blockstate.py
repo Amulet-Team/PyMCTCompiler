@@ -1,4 +1,5 @@
 import itertools
+from dataclasses import dataclass
 
 
 def mushroom_block(color: str, include_return_stem: bool = True) -> dict:
@@ -1693,20 +1694,34 @@ def stairs(block_name: str, *, material: str | None = None, shape: bool = False)
         }
     }
 
-def fence(block_name: str, material: str, default_block: str, *, shape: bool = False):
+@dataclass(frozen=True)
+class BlockNameMaterial:
+    block_name: str
+    prop_name: str
+    prop_value: str
+
+
+def _bool_connections(
+    universal_block: str,
+    default_block: str,
+    *,
+    block_name_material: BlockNameMaterial | None = None,
+    shape: bool = False
+):
     return {
         "to_universal": [
             {
                 "function": "new_block",
-                "options": "universal_minecraft:fence"
-            },
+                "options": f"universal_minecraft:{universal_block}"
+            }
+        ] + ([
             {
                 "function": "new_properties",
                 "options": {
-                    "material": f"\"{material}\""
+                    block_name_material.prop_name: f"\"{block_name_material.prop_value}\""
                 }
             }
-        ] + ([
+        ] if block_name_material is not None else []) + ([
             {
                 "function": "map_properties",
                 "options": {
@@ -1725,23 +1740,24 @@ def fence(block_name: str, material: str, default_block: str, *, shape: bool = F
             }
         ] if shape else []),
         "from_universal": {
-            "universal_minecraft:fence": [
+            f"universal_minecraft:{universal_block}": [
                 {
                     "function": "new_block",
                     "options": f"minecraft:{default_block}"
-                },
+                }
+            ] + ([
                 {
                     "function": "map_properties",
-                    "options": {
-                        "material": {
-                            f"\"{material}\"": [
+                    "options": ({
+                        block_name_material.prop_name: {
+                            f"\"{block_name_material.prop_value}\"": [
                                 {
                                     "function": "new_block",
-                                    "options": f"minecraft:{block_name}"
+                                    "options": f"minecraft:{block_name_material.block_name}"
                                 }
                             ]
                         }
-                    } | ({
+                    } if block_name_material is not None else {}) | ({
                         direction: {
                             j: [
                                 {
@@ -1755,6 +1771,29 @@ def fence(block_name: str, material: str, default_block: str, *, shape: bool = F
                         } for direction in ("north", "east", "south", "west")
                     } if shape else {})
                 }
-            ]
+            ] if block_name_material is not None or shape else [])
         }
     }
+
+def fence(block_name: str, material: str, default_block: str, *, shape: bool = False):
+    return _bool_connections(
+        "fence",
+        default_block,
+        block_name_material=BlockNameMaterial(block_name, "material", material),
+        shape=shape
+    )
+
+def glass_pane(shape: bool = False):
+    return _bool_connections(
+        "glass_pane",
+        "glass_pane",
+        shape=shape
+    )
+
+def stained_glass_pane(colour: str, shape: bool = False):
+    return _bool_connections(
+        "stained_glass_pane",
+        "white_stained_glass_pane",
+        block_name_material=BlockNameMaterial(f"{colour}_stained_glass_pane", "color", colour),
+        shape=shape
+    )
