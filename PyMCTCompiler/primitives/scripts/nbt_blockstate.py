@@ -1797,3 +1797,18 @@ def stained_glass_pane(colour: str, shape: bool = False):
         block_name_material=BlockNameMaterial(f"{colour}_stained_glass_pane", "color", colour),
         shape=shape
     )
+
+def hard_glass_pane(shape: bool = False):
+    return _bool_connections(
+        "hard_glass_pane",
+        "hard_glass_pane",
+        shape=shape
+    )
+
+def hard_stained_glass_pane(colour: str, shape: bool = False):
+    return _bool_connections(
+        "hard_stained_glass_pane",
+        "hard_white_stained_glass_pane",
+        block_name_material=BlockNameMaterial(f"hard_{colour}_stained_glass_pane", "color", colour),
+        shape=shape
+    )
