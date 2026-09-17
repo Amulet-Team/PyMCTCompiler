@@ -1812,3 +1812,11 @@ def hard_stained_glass_pane(colour: str, shape: bool = False):
         block_name_material=BlockNameMaterial(f"hard_{colour}_stained_glass_pane", "color", colour),
         shape=shape
     )
+
+def bars(material: str, shape: bool = False):
+    return _bool_connections(
+        "bars",
+        "iron_bars",
+        block_name_material=BlockNameMaterial(f"{material}_bars", "material", material),
+        shape=shape
+    )
