@@ -250,5 +250,7 @@
     "poplar_shelf": [">nbt.shelf.b121", "shelf", "poplar_shelf"],
     "poplar_hanging_sign": [">nbt.sign.hanging_b120", "poplar_hanging_sign"],
     "poplar_standing_sign": [">nbt.sign.b120", "poplar_standing_sign"],
-    "poplar_wall_sign": [">nbt.sign.wall_b120", "poplar_wall_sign"]
+    "poplar_wall_sign": [">nbt.sign.wall_b120", "poplar_wall_sign"],
+
+    "flower_pot": ["flower_pot", ">nbt.flower_pot.b2650"]
 }

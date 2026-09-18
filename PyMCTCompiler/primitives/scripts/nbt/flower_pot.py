@@ -430,6 +430,10 @@ b_blockstate_plants_2610 = {
     '"golden_dandelion"': ("minecraft:golden_dandelion", "{}", 18168865),
 }
 
+b_blockstate_plants_2650 = {
+    '"poplar_sapling"': ("minecraft:poplar_sapling", "{age_bit: 0b}", 18168865),
+}
+
 _J19 = TranslationFile(
     pot_item_to_universal_numerical_java(j_plants),
     pot_item_from_universal_numerical_java(j_plants),
@@ -530,6 +534,11 @@ _B12120 = TranslationFile(
 _B2610 = TranslationFile(
     pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_2610),
     pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_2610),
+)
+
+_B2650 = TranslationFile(
+    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_2650),
+    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_2650),
 )
 
 j19 = merge(
@@ -709,6 +718,25 @@ b2610 = merge(
         _B12120,
         _B12150,
         _B2610,
+        bedrock_is_movable,
+    ],
+    ["universal_minecraft:flower_pot"],
+)
+
+b2650 = merge(
+    [
+        EmptyNBT(":FlowerPot"),
+        _B113_base,
+        _B116,
+        _B117,
+        _B119,
+        _B11980,
+        _B12080,
+        _B121,
+        _B12120,
+        _B12150,
+        _B2610,
+        _B2650,
         bedrock_is_movable,
     ],
     ["universal_minecraft:flower_pot"],
