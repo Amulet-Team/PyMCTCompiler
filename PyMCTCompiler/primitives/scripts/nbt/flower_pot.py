@@ -50,25 +50,28 @@ def pot_item_to_universal_numerical_bedrock(plants: Dict[str, Tuple[str, int]]):
         }
     ]
     for uni_name, (plant_id, plant_data) in plants.items():
-        cases2 = cases.setdefault(
+        functions = cases.setdefault(
             f'"{plant_id}"',
-            [
-                {"function": "new_properties", "options": {"plant": uni_name}},
-                {
-                    "function": "walk_input_nbt",
-                    "path": [["PlantBlock", "compound"], ["val", "short"]],
-                    "options": {
-                        "type": "short",
-                        "functions": [
-                            {"function": "map_nbt", "options": {"cases": {}}}
-                        ],
-                    },
-                },
-            ],
-        )[1]["options"]["functions"][0]["options"]["cases"]
-        cases2[f"{plant_data}s"] = [
-            {"function": "new_properties", "options": {"plant": uni_name}}
-        ]
+            [{"function": "new_properties", "options": {"plant": uni_name}}],
+        )
+        if functions[0]["options"]["plant"] != uni_name:
+            if len(functions) == 1:
+                functions.append(
+                    {
+                        "function": "walk_input_nbt",
+                        "path": [["PlantBlock", "compound"], ["val", "short"]],
+                        "options": {
+                            "type": "short",
+                            "functions": [
+                                {"function": "map_nbt", "options": {"cases": {}}}
+                            ],
+                        },
+                    }
+                )
+            cases2 = functions[1]["options"]["functions"][0]["options"]["cases"]
+            cases2[f"{plant_data}s"] = [
+                {"function": "new_properties", "options": {"plant": uni_name}}
+            ]
 
     return nbt
 
@@ -123,25 +126,28 @@ def pot_item_to_universal_blockstate_bedrock(plants: Dict[str, Tuple[str, str, i
         }
     ]
     for uni_name, (plant_id, plant_data, _) in plants.items():
-        cases2 = cases.setdefault(
+        functions = cases.setdefault(
             f'"{plant_id}"',
-            [
-                {"function": "new_properties", "options": {"plant": uni_name}},
-                {
-                    "function": "walk_input_nbt",
-                    "path": [["PlantBlock", "compound"], ["states", "compound"]],
-                    "options": {
-                        "type": "compound",
-                        "functions": [
-                            {"function": "map_nbt", "options": {"cases": {}}}
-                        ],
-                    },
-                },
-            ],
-        )[1]["options"]["functions"][0]["options"]["cases"]
-        cases2[amulet_nbt.from_snbt(plant_data).to_snbt()] = [
-            {"function": "new_properties", "options": {"plant": uni_name}}
-        ]
+            [{"function": "new_properties", "options": {"plant": uni_name}}],
+        )
+        if functions[0]["options"]["plant"] != uni_name:
+            if len(functions) == 1:
+                functions.append(
+                    {
+                        "function": "walk_input_nbt",
+                        "path": [["PlantBlock", "compound"], ["states", "compound"]],
+                        "options": {
+                            "type": "compound",
+                            "functions": [
+                                {"function": "map_nbt", "options": {"cases": {}}}
+                            ],
+                        },
+                    }
+                )
+            cases2 = functions[1]["options"]["functions"][0]["options"]["cases"]
+            cases2[amulet_nbt.from_snbt(plant_data).to_snbt()] = [
+                {"function": "new_properties", "options": {"plant": uni_name}}
+            ]
 
     return nbt
 
@@ -190,25 +196,28 @@ def pot_item_to_universal_numerical_java(plants: Dict[str, Tuple[str, int]]):
         }
     ]
     for uni_name, (plant_id, plant_data) in plants.items():
-        cases2 = cases.setdefault(
+        functions = cases.setdefault(
             f'"{plant_id}"',
-            [
-                {"function": "new_properties", "options": {"plant": uni_name}},
-                {
-                    "function": "walk_input_nbt",
-                    "path": [["Data", "int"]],
-                    "options": {
-                        "type": "int",
-                        "functions": [
-                            {"function": "map_nbt", "options": {"cases": {}}}
-                        ],
-                    },
-                },
-            ],
-        )[1]["options"]["functions"][0]["options"]["cases"]
-        cases2[str(plant_data)] = [
-            {"function": "new_properties", "options": {"plant": uni_name}}
-        ]
+            [{"function": "new_properties", "options": {"plant": uni_name}}],
+        )
+        if functions[0]["options"]["plant"] != uni_name:
+            if len(functions) == 1:
+                functions.append(
+                    {
+                        "function": "walk_input_nbt",
+                        "path": [["Data", "int"]],
+                        "options": {
+                            "type": "int",
+                            "functions": [
+                                {"function": "map_nbt", "options": {"cases": {}}}
+                            ],
+                        },
+                    }
+                )
+            cases2 = functions[1]["options"]["functions"][0]["options"]["cases"]
+            cases2[str(plant_data)] = [
+                {"function": "new_properties", "options": {"plant": uni_name}}
+            ]
 
     return nbt
 
@@ -445,100 +454,283 @@ _B17 = TranslationFile(
 )
 
 _B18 = TranslationFile(
-    pot_item_to_universal_numerical_bedrock(b_plants_18),
-    pot_item_from_universal_numerical_bedrock(b_plants_18),
+    pot_item_to_universal_numerical_bedrock(b_plants | b_plants_18),
+    pot_item_from_universal_numerical_bedrock(b_plants | b_plants_18),
 )
 
 _B19 = TranslationFile(
-    pot_item_to_universal_numerical_bedrock(b_plants_19),
-    pot_item_from_universal_numerical_bedrock(b_plants_19),
+    pot_item_to_universal_numerical_bedrock(b_plants | b_plants_18 | b_plants_19),
+    pot_item_from_universal_numerical_bedrock(b_plants | b_plants_18 | b_plants_19),
 )
 
-_B113_base = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_113),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_113),
-)
-
-_B113_fern = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_113_fern),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_113_fern),
-)
-
-_B113_yellow_flower = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_113_yellow_flower),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_113_yellow_flower),
-)
-
-_B113_red_flower = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_113_red_flower),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_113_red_flower),
-)
-
-_B113_saplings = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_113_saplings),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_113_saplings),
+_B113 = TranslationFile(
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+    ),
 )
 
 _B116 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_116),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_116),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+    ),
 )
 
 _B117 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_117),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_117),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+    ),
 )
 
 _B119 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_119),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_119),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+    ),
 )
 
 _B11980 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_11980),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_11980),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_113_red_flower
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+    ),
 )
 
 _B12080 = TranslationFile(
     pot_item_to_universal_blockstate_bedrock(
-        {**b_blockstate_plants_113_saplings, **b_blockstate_plants_12080}
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
     ),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_12080),
-)
-
-_B12150 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_12150),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_12150),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+    ),
 )
 
 _B121 = TranslationFile(
     pot_item_to_universal_blockstate_bedrock(
-        {
-            **b_blockstate_plants_113_fern,
-            **b_blockstate_plants_121,
-        }
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_121
     ),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_121),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_121
+    ),
 )
 
 _B12120 = TranslationFile(
     pot_item_to_universal_blockstate_bedrock(
-        {
-            **b_blockstate_plants_113_yellow_flower,
-            **b_blockstate_plants_12120,
-        }
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_121
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_12120
     ),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_12120),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_121
+        | b_blockstate_plants_12120
+    ),
+)
+
+_B12150 = TranslationFile(
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_121
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_121
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+    ),
 )
 
 _B2610 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_2610),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_2610),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_121
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+        | b_blockstate_plants_2610
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_121
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+        | b_blockstate_plants_2610
+    ),
 )
 
 _B2650 = TranslationFile(
-    pot_item_to_universal_blockstate_bedrock(b_blockstate_plants_2650),
-    pot_item_from_universal_blockstate_bedrock(b_blockstate_plants_2650),
+    pot_item_to_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_113_saplings
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_113_fern
+        | b_blockstate_plants_121
+        | b_blockstate_plants_113_yellow_flower
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+        | b_blockstate_plants_2610
+        | b_blockstate_plants_2650
+    ),
+    pot_item_from_universal_blockstate_bedrock(
+        b_blockstate_plants_113
+        | b_blockstate_plants_116
+        | b_blockstate_plants_117
+        | b_blockstate_plants_119
+        | b_blockstate_plants_11980
+        | b_blockstate_plants_12080
+        | b_blockstate_plants_121
+        | b_blockstate_plants_12120
+        | b_blockstate_plants_12150
+        | b_blockstate_plants_2610
+        | b_blockstate_plants_2650
+    ),
 )
 
 j19 = merge(
@@ -554,13 +746,13 @@ b17 = merge(
 )
 
 b18 = merge(
-    [EmptyNBT(":FlowerPot"), _B17, _B18, bedrock_is_movable],
+    [EmptyNBT(":FlowerPot"), _B18, bedrock_is_movable],
     ["universal_minecraft:flower_pot"],
     abstract=True,
 )
 
 b19 = merge(
-    [EmptyNBT(":FlowerPot"), _B17, _B18, _B19, bedrock_is_movable],
+    [EmptyNBT(":FlowerPot"), _B19, bedrock_is_movable],
     ["universal_minecraft:flower_pot"],
     abstract=True,
 )
@@ -568,11 +760,7 @@ b19 = merge(
 b113 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B113_red_flower,
-        _B113_saplings,
+        _B113,
         bedrock_is_movable,
     ],
     ["universal_minecraft:flower_pot"],
@@ -581,11 +769,6 @@ b113 = merge(
 b116 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B113_red_flower,
-        _B113_saplings,
         _B116,
         bedrock_is_movable,
     ],
@@ -595,12 +778,6 @@ b116 = merge(
 b117 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B113_red_flower,
-        _B113_saplings,
-        _B116,
         _B117,
         bedrock_is_movable,
     ],
@@ -610,13 +787,6 @@ b117 = merge(
 b119 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B113_red_flower,
-        _B113_saplings,
-        _B116,
-        _B117,
         _B119,
         bedrock_is_movable,
     ],
@@ -626,14 +796,6 @@ b119 = merge(
 b11980 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B113_red_flower,
-        _B113_saplings,
-        _B116,
-        _B117,
-        _B119,
         _B11980,
         bedrock_is_movable,
     ],
@@ -643,13 +805,6 @@ b11980 = merge(
 b12080 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_fern,
-        _B113_yellow_flower,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
         _B12080,
         bedrock_is_movable,
     ],
@@ -659,13 +814,6 @@ b12080 = merge(
 b121 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B113_yellow_flower,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
-        _B12080,
         _B121,
         bedrock_is_movable,
     ],
@@ -675,13 +823,6 @@ b121 = merge(
 b12120 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
-        _B12080,
-        _B121,
         _B12120,
         bedrock_is_movable,
     ],
@@ -691,14 +832,6 @@ b12120 = merge(
 b12150 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
-        _B12080,
-        _B121,
-        _B12120,
         _B12150,
         bedrock_is_movable,
     ],
@@ -708,15 +841,6 @@ b12150 = merge(
 b2610 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
-        _B12080,
-        _B121,
-        _B12120,
-        _B12150,
         _B2610,
         bedrock_is_movable,
     ],
@@ -726,16 +850,6 @@ b2610 = merge(
 b2650 = merge(
     [
         EmptyNBT(":FlowerPot"),
-        _B113_base,
-        _B116,
-        _B117,
-        _B119,
-        _B11980,
-        _B12080,
-        _B121,
-        _B12120,
-        _B12150,
-        _B2610,
         _B2650,
         bedrock_is_movable,
     ],
