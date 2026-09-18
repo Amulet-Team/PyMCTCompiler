@@ -245,6 +245,8 @@
     "trip_wire": "trip_wire_2650",
     "red_shrub": "red_shrub",
     "shelf_mushroom": "shelf_mushroom",
+    "straw_bed": "straw_bed",
+
     "poplar_shelf": [">nbt.shelf.b121", "shelf", "poplar_shelf"],
     "poplar_hanging_sign": [">nbt.sign.hanging_b120", "poplar_hanging_sign"],
     "poplar_standing_sign": [">nbt.sign.b120", "poplar_standing_sign"],
