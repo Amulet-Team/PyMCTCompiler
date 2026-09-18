@@ -94,6 +94,5 @@
     "poplar_trapdoor": "poplar_trapdoor",
     "potted_poplar_sapling": "potted_poplar_sapling",
 
-    "red_shrub": "red_shrub",
-    "straw_bed": [">nbt.bed.j113", "straw_bed"]
+    "red_shrub": "red_shrub"
 }
