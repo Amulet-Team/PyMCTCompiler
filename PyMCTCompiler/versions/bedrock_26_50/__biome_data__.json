@@ -1,0 +1,12 @@
+{
+	"add": {
+		"biomes": {
+			"minecraft:dappled_forest": [
+				195,
+				"universal_minecraft:dappled_forest"
+			]
+		},
+		"universal_remap": {}
+	},
+	"remove": []
+}

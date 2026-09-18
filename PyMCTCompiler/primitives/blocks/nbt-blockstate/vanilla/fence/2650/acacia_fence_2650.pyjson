@@ -1,0 +1,1 @@
+nbt_blockstate.fence("acacia_fence", "acacia", "oak_fence", shape=True)

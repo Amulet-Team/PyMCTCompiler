@@ -1,0 +1,1 @@
+blockstate.wall_sign193("minecraft", "poplar_wall_hanging_sign", "\"poplar\"", "universal_minecraft", "wall_hanging_sign", {"facing": ["\"north\"","\"south\"","\"west\"","\"east\""]}, default="minecraft:oak_wall_hanging_sign")

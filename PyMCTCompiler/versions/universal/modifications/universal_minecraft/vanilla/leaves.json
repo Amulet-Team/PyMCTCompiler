@@ -10,7 +10,10 @@
 		"flowering_azalea_leaves",
 		"mangrove_leaves",
 		"cherry_leaves",
-		"pale_oak_leaves"
+		"pale_oak_leaves",
+		"yellow_poplar_leaves",
+		"orange_poplar_leaves",
+		"red_poplar_leaves"
 	],
 	"add": {
 		"leaves": {
@@ -26,7 +29,10 @@
 					"\"azalea\"",
 					"\"flowering_azalea\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"yellow_poplar\"",
+					"\"orange_poplar\"",
+					"\"red_poplar\""
 				],
 				"distance": [
 					"\"1\"",

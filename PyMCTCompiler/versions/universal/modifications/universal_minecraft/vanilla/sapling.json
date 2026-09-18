@@ -7,7 +7,8 @@
 		"acacia_sapling",
 		"dark_oak_sapling",
 		"cherry_sapling",
-		"pale_oak_sapling"
+		"pale_oak_sapling",
+		"poplar_sapling"
 	],
 	"add": {
 		"sapling": {
@@ -20,7 +21,8 @@
 					"\"acacia\"",
 					"\"dark_oak\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"poplar\""
 				],
 				"stage": [
 					"\"0\"",

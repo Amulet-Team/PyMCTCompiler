@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("light_blue_wool", shape=True)

@@ -1,0 +1,1 @@
+blockstate.material_helper("minecraft", "black_wool_slab", "\"black_wool\"", "universal_minecraft", "slab", {"type": ["\"top\"","\"bottom\"","\"double\""]}, default="minecraft:stone_slab")

@@ -1,0 +1,4088 @@
+{
+    "minecraft:acacia_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:acacia_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:andesite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:bamboo_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:bamboo_mosaic_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:bamboo_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:birch_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:birch_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:black_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:black_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:black_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:black_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:black_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:black_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:black_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:blackstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:blue_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:blue_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:blue_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:blue_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:blue_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:blue_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:blue_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:brown_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:brown_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:brown_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:brown_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:brown_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:brown_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:brown_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:cherry_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:cherry_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:cinnabar_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:cinnabar_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:cobbled_deepslate_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:crimson_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:crimson_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:cyan_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cyan_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cyan_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:cyan_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:cyan_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cyan_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:cyan_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:dark_oak_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:dark_oak_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:dark_prismarine_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:deepslate_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:deepslate_tile_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:diorite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:end_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:exposed_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:exposed_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:granite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:gray_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:gray_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:gray_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:gray_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:gray_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:gray_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:gray_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:green_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:green_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:green_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:green_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:green_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:green_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:green_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:hard_black_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_blue_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_brown_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_cyan_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_gray_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_green_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_light_blue_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_light_gray_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_lime_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_magenta_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_orange_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_pink_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_purple_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_red_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_white_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:hard_yellow_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:iron_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:jungle_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:jungle_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:light_blue_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_blue_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_blue_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:light_blue_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_blue_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_blue_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:light_gray_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:light_gray_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:lime_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:lime_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:lime_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:lime_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:lime_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:lime_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:lime_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:magenta_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:magenta_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:mangrove_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:mangrove_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:mossy_cobblestone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:mossy_stone_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:mud_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:nether_brick_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:nether_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:normal_stone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:oak_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:oak_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:orange_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:orange_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:orange_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:orange_poplar_leaves": {
+        "block_added": {
+            "defaults": {
+                "persistent_bit": "0b",
+                "update_bit": "0b"
+            },
+            "properties": {
+                "persistent_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "update_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:orange_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:orange_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:orange_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:orange_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:oxidized_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:oxidized_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:pale_oak_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:pale_oak_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:pink_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:pink_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:pink_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:pink_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:pink_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:pink_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:pink_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:polished_andesite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_blackstone_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_blackstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_cinnabar_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_deepslate_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_diorite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_granite_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_sulfur_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:polished_tuff_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:poplar_button": {
+        "block_added": {
+            "defaults": {
+                "button_pressed_bit": "0b",
+                "facing_direction": "0"
+            },
+            "properties": {
+                "button_pressed_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "facing_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_door": {
+        "block_added": {
+            "defaults": {
+                "door_hinge_bit": "0b",
+                "minecraft:cardinal_direction": "\"south\"",
+                "open_bit": "0b",
+                "upper_block_bit": "0b"
+            },
+            "properties": {
+                "door_hinge_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ],
+                "open_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "upper_block_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_fence": {
+        "block_added": {
+            "defaults": {
+                "minecraft:connection_east": "0b",
+                "minecraft:connection_north": "0b",
+                "minecraft:connection_south": "0b",
+                "minecraft:connection_west": "0b"
+            },
+            "properties": {
+                "minecraft:connection_east": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:connection_north": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:connection_south": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:connection_west": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_fence_gate": {
+        "block_added": {
+            "defaults": {
+                "in_wall_bit": "0b",
+                "minecraft:cardinal_direction": "\"south\"",
+                "open_bit": "0b"
+            },
+            "properties": {
+                "in_wall_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ],
+                "open_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_hanging_sign": {
+        "block_added": {
+            "defaults": {
+                "attached_bit": "0b",
+                "facing_direction": "0",
+                "ground_sign_direction": "0",
+                "hanging": "0b"
+            },
+            "properties": {
+                "attached_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "facing_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "ground_sign_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15"
+                ],
+                "hanging": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_log": {
+        "block_added": {
+            "defaults": {
+                "pillar_axis": "\"y\""
+            },
+            "properties": {
+                "pillar_axis": [
+                    "\"y\"",
+                    "\"x\"",
+                    "\"z\""
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_planks": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:poplar_pressure_plate": {
+        "block_added": {
+            "defaults": {
+                "redstone_signal": "0"
+            },
+            "properties": {
+                "redstone_signal": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_sapling": {
+        "block_added": {
+            "defaults": {
+                "age_bit": "0b"
+            },
+            "properties": {
+                "age_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_shelf": {
+        "block_added": {
+            "defaults": {
+                "minecraft:cardinal_direction": "\"south\"",
+                "powered_bit": "0b",
+                "powered_shelf_type": "0"
+            },
+            "properties": {
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ],
+                "powered_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "powered_shelf_type": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_standing_sign": {
+        "block_added": {
+            "defaults": {
+                "ground_sign_direction": "0"
+            },
+            "properties": {
+                "ground_sign_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_trapdoor": {
+        "block_added": {
+            "defaults": {
+                "direction": "0",
+                "open_bit": "0b",
+                "upside_down_bit": "0b"
+            },
+            "properties": {
+                "direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ],
+                "open_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_wall_sign": {
+        "block_added": {
+            "defaults": {
+                "facing_direction": "0"
+            },
+            "properties": {
+                "facing_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        }
+    },
+    "minecraft:poplar_wood": {
+        "block_added": {
+            "defaults": {
+                "pillar_axis": "\"y\""
+            },
+            "properties": {
+                "pillar_axis": [
+                    "\"y\"",
+                    "\"x\"",
+                    "\"z\""
+                ]
+            }
+        }
+    },
+    "minecraft:prismarine_bricks_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:prismarine_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:purple_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:purple_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:purple_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:purple_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:purple_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:purple_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:purple_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:purpur_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:quartz_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:red_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:red_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:red_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:red_nether_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:red_poplar_leaves": {
+        "block_added": {
+            "defaults": {
+                "persistent_bit": "0b",
+                "update_bit": "0b"
+            },
+            "properties": {
+                "persistent_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "update_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:red_sandstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:red_shrub": {
+        "block_added": {
+            "defaults": {},
+            "properties": {}
+        }
+    },
+    "minecraft:red_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:red_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:red_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:red_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:resin_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:sandstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:shelf_mushroom": {
+        "block_added": {
+            "defaults": {
+                "growth": "0",
+                "minecraft:cardinal_direction": "\"south\""
+            },
+            "properties": {
+                "growth": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ]
+            }
+        }
+    },
+    "minecraft:smooth_quartz_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:smooth_red_sandstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:smooth_sandstone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:spruce_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:spruce_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:stone_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:stone_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:straw_bed": {
+        "block_added": {
+            "defaults": {
+                "head_piece_bit": "0b",
+                "minecraft:cardinal_direction": "\"south\"",
+                "occupied_bit": "0b"
+            },
+            "properties": {
+                "head_piece_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ],
+                "occupied_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:stripped_poplar_log": {
+        "block_added": {
+            "defaults": {
+                "pillar_axis": "\"y\""
+            },
+            "properties": {
+                "pillar_axis": [
+                    "\"y\"",
+                    "\"x\"",
+                    "\"z\""
+                ]
+            }
+        }
+    },
+    "minecraft:stripped_poplar_wood": {
+        "block_added": {
+            "defaults": {
+                "pillar_axis": "\"y\""
+            },
+            "properties": {
+                "pillar_axis": [
+                    "\"y\"",
+                    "\"x\"",
+                    "\"z\""
+                ]
+            }
+        }
+    },
+    "minecraft:sulfur_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:sulfur_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:trip_wire": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:tuff_brick_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:tuff_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:warped_fence": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:warped_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:waxed_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:waxed_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:waxed_exposed_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:waxed_exposed_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:waxed_oxidized_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:waxed_oxidized_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:waxed_weathered_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:waxed_weathered_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:weathered_copper_bars": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:weathered_cut_copper_stairs": {
+        "properties_added": {
+            "minecraft:corner": [
+                "\"none\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    },
+    "minecraft:white_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:white_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:white_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:white_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:white_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:white_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:white_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_concrete_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_concrete_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_concrete_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_poplar_leaves": {
+        "block_added": {
+            "defaults": {
+                "persistent_bit": "0b",
+                "update_bit": "0b"
+            },
+            "properties": {
+                "persistent_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "update_bit": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_stained_glass_pane": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:yellow_wool_double_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_wool_slab": {
+        "block_added": {
+            "defaults": {
+                "minecraft:vertical_half": "\"bottom\""
+            },
+            "properties": {
+                "minecraft:vertical_half": [
+                    "\"bottom\"",
+                    "\"top\""
+                ]
+            }
+        }
+    },
+    "minecraft:yellow_wool_stairs": {
+        "block_added": {
+            "defaults": {
+                "minecraft:corner": "\"none\"",
+                "upside_down_bit": "0b",
+                "weirdo_direction": "0"
+            },
+            "properties": {
+                "minecraft:corner": [
+                    "\"none\"",
+                    "\"inner_left\"",
+                    "\"inner_right\"",
+                    "\"outer_left\"",
+                    "\"outer_right\""
+                ],
+                "upside_down_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "weirdo_direction": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    }
+}

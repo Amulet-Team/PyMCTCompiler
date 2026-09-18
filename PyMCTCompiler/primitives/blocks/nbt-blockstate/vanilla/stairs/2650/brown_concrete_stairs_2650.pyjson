@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("brown_concrete", shape=True)

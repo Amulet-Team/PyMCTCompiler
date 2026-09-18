@@ -1,0 +1,166 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:straw_bed"
+        },
+        {
+            "function": "map_properties",
+            "options": {
+                "minecraft:cardinal_direction": {
+                    "\"south\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "facing": "\"south\""
+                            }
+                        }
+                    ],
+                    "\"west\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "facing": "\"west\""
+                            }
+                        }
+                    ],
+                    "\"north\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "facing": "\"north\""
+                            }
+                        }
+                    ],
+                    "\"east\"": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "facing": "\"east\""
+                            }
+                        }
+                    ]
+                },
+                "head_piece_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "part": "\"foot\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "part": "\"head\""
+                            }
+                        }
+                    ]
+                },
+                "occupied_bit": {
+                    "0b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "occupied": "\"false\""
+                            }
+                        }
+                    ],
+                    "1b": [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "occupied": "\"true\""
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "from_universal": {
+        "universal_minecraft:straw_bed": [
+            {
+                "function": "new_block",
+                "options": "minecraft:straw_bed"
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "facing": {
+                        "\"south\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:cardinal_direction": "\"south\""
+                                }
+                            }
+                        ],
+                        "\"west\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:cardinal_direction": "\"west\""
+                                }
+                            }
+                        ],
+                        "\"north\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:cardinal_direction": "\"north\""
+                                }
+                            }
+                        ],
+                        "\"east\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "minecraft:cardinal_direction": "\"east\""
+                                }
+                            }
+                        ]
+                    },
+                    "part": {
+                        "\"foot\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "head_piece_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"head\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "head_piece_bit": "1b"
+                                }
+                            }
+                        ]
+                    },
+                    "occupied": {
+                        "\"false\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "occupied_bit": "0b"
+                                }
+                            }
+                        ],
+                        "\"true\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "occupied_bit": "1b"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

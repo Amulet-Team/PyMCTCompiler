@@ -1,4 +1,5 @@
 import itertools
+from dataclasses import dataclass
 
 
 def mushroom_block(color: str, include_return_stem: bool = True) -> dict:
@@ -1563,4 +1564,373 @@ def double_slab(material: str, block_id: str):
                 },
             ]
         },
+    }
+
+def stairs(block_name: str, *, material: str | None = None, shape: bool = False):
+    if material is None:
+        material = block_name
+    facing_states = [("0", "\"east\""), ("1", "\"west\""), ("2", "\"south\""), ("3", "\"north\"")]
+    half_states = [("0b", "\"bottom\""), ("1b", "\"top\"")]
+    shape_states = [
+        ("\"none\"", "\"straight\""),
+        ("\"inner_left\"", "\"inner_left\""),
+        ("\"inner_right\"", "\"inner_right\""),
+        ("\"outer_left\"", "\"outer_left\""),
+        ("\"outer_right\"",  "\"outer_right\""),
+    ]
+
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": "universal_minecraft:stairs"
+            },
+            {
+                "function": "new_properties",
+                "options": {
+                    "material": f"\"{material}\"",
+                }
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "upside_down_bit": {
+                        upside_down_bit: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "half": half
+                                }
+                            }
+                        ]
+                        for upside_down_bit, half in half_states
+                    },
+                    "weirdo_direction": {
+                        weirdo_direction: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "facing": facing
+                                }
+                            }
+                        ]
+                        for weirdo_direction, facing in facing_states
+                    },
+                    **(
+                        {
+                            "minecraft:corner": {
+                                corner: [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "shape": shape
+                                        }
+                                    }
+                                ]
+                                for corner, shape in shape_states
+                            }
+                        } if shape else {}
+                    )
+                }
+            }
+        ],
+        "from_universal": {
+            "universal_minecraft:stairs": [
+                {
+                    "function": "new_block",
+                    "options": "minecraft:oak_stairs"
+                },
+                {
+                    "function": "map_properties",
+                    "options": {
+                        "material": {
+                            f"\"{material}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name}_stairs"
+                                }
+                            ]
+                        },
+                        "half": {
+                            half: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "upside_down_bit": upside_down_bit
+                                    }
+                                }
+                            ]
+                            for upside_down_bit, half in half_states
+                        },
+                        "facing": {
+                            facing: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "weirdo_direction": weirdo_direction
+                                    }
+                                }
+                            ]
+                            for weirdo_direction, facing in facing_states
+                        },
+                        **(
+                            {
+                                "shape": {
+                                    shape: [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "minecraft:corner": corner
+                                            }
+                                        }
+                                    ]
+                                    for corner, shape in shape_states
+                                }
+                            } if shape else {}
+                        )
+                    }
+                }
+            ]
+        }
+    }
+
+@dataclass(frozen=True)
+class BlockNameMaterial:
+    block_name: str
+    prop_name: str
+    prop_value: str
+
+
+def _bool_connections(
+    universal_block: str,
+    default_block: str,
+    *,
+    block_name_material: BlockNameMaterial | None = None,
+    shape: bool = False
+):
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": f"universal_minecraft:{universal_block}"
+            }
+        ] + ([
+            {
+                "function": "new_properties",
+                "options": {
+                    block_name_material.prop_name: f"\"{block_name_material.prop_value}\""
+                }
+            }
+        ] if block_name_material is not None else []) + ([
+            {
+                "function": "map_properties",
+                "options": {
+                    f"minecraft:connection_{direction}": {
+                        b: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    direction: j
+                                }
+                            }
+                        ]
+                        for b, j in [("0b", "\"false\""), ("1b", "\"true\"")]
+                    } for direction in ("north", "east", "south", "west")
+                }
+            }
+        ] if shape else []),
+        "from_universal": {
+            f"universal_minecraft:{universal_block}": [
+                {
+                    "function": "new_block",
+                    "options": f"minecraft:{default_block}"
+                }
+            ] + ([
+                {
+                    "function": "map_properties",
+                    "options": ({
+                        block_name_material.prop_name: {
+                            f"\"{block_name_material.prop_value}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name_material.block_name}"
+                                }
+                            ]
+                        }
+                    } if block_name_material is not None else {}) | ({
+                        direction: {
+                            j: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        f"minecraft:connection_{direction}": b
+                                    }
+                                }
+                            ]
+                            for b, j in [("0b", "\"false\""), ("1b", "\"true\"")]
+                        } for direction in ("north", "east", "south", "west")
+                    } if shape else {})
+                }
+            ] if block_name_material is not None or shape else [])
+        }
+    }
+
+def fence(block_name: str, material: str, default_block: str, *, shape: bool = False):
+    return _bool_connections(
+        "fence",
+        default_block,
+        block_name_material=BlockNameMaterial(block_name, "material", material),
+        shape=shape
+    )
+
+def glass_pane(shape: bool = False):
+    return _bool_connections(
+        "glass_pane",
+        "glass_pane",
+        shape=shape
+    )
+
+def stained_glass_pane(colour: str, shape: bool = False):
+    return _bool_connections(
+        "stained_glass_pane",
+        "white_stained_glass_pane",
+        block_name_material=BlockNameMaterial(f"{colour}_stained_glass_pane", "color", colour),
+        shape=shape
+    )
+
+def hard_glass_pane(shape: bool = False):
+    return _bool_connections(
+        "hard_glass_pane",
+        "hard_glass_pane",
+        shape=shape
+    )
+
+def hard_stained_glass_pane(colour: str, shape: bool = False):
+    return _bool_connections(
+        "hard_stained_glass_pane",
+        "hard_white_stained_glass_pane",
+        block_name_material=BlockNameMaterial(f"hard_{colour}_stained_glass_pane", "color", colour),
+        shape=shape
+    )
+
+def bars(material: str, shape: bool = False):
+    return _bool_connections(
+        "bars",
+        "iron_bars",
+        block_name_material=BlockNameMaterial(f"{material}_bars", "material", material),
+        shape=shape
+    )
+
+def leaves(default_block: str, block_name: str, material: str):
+    return {
+        "to_universal": [
+            {
+                "function": "new_block",
+                "options": "universal_minecraft:leaves"
+            },
+            {
+                "function": "new_properties",
+                "options": {
+                    "material": f"\"{material}\""
+                }
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "persistent_bit": {
+                        "0b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "persistent": "\"false\""
+                                }
+                            }
+                        ],
+                        "1b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "persistent": "\"true\""
+                                }
+                            }
+                        ]
+                    },
+                    "update_bit": {
+                        "0b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "check_decay": "\"false\""
+                                }
+                            }
+                        ],
+                        "1b": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "check_decay": "\"true\""
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "from_universal": {
+            "universal_minecraft:leaves": [
+                {
+                    "function": "new_block",
+                    "options": f"minecraft:{default_block}"
+                },
+                {
+                    "function": "map_properties",
+                    "options": {
+                        "material": {
+                            f"\"{material}\"": [
+                                {
+                                    "function": "new_block",
+                                    "options": f"minecraft:{block_name}"
+                                }
+                            ]
+                        },
+                        "persistent": {
+                            "\"false\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "persistent_bit": "0b"
+                                    }
+                                }
+                            ],
+                            "\"true\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "persistent_bit": "1b"
+                                    }
+                                }
+                            ]
+                        },
+                        "check_decay": {
+                            "\"false\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "update_bit": "0b"
+                                    }
+                                }
+                            ],
+                            "\"true\"": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "update_bit": "1b"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
     }

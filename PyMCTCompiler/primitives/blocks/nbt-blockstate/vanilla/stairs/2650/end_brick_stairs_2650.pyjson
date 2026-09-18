@@ -1,0 +1,1 @@
+nbt_blockstate.stairs("end_brick", material="end_stone_brick", shape=True)

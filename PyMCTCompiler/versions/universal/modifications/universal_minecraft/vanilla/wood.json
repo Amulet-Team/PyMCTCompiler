@@ -21,7 +21,9 @@
 		"cherry_wood",
 		"stripped_cherry_wood",
 		"pale_oak_wood",
-		"stripped_pale_oak_wood"
+		"stripped_pale_oak_wood",
+		"poplar_wood",
+		"stripped_poplar_wood"
 	],
 	"add": {
 		"wood": {
@@ -37,7 +39,8 @@
 					"\"crimson\"",
 					"\"warped\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"poplar\""
 				],
 				"axis": [
 					"\"x\"",

@@ -1,0 +1,1 @@
+blockstate.wood("minecraft", "poplar_wood", "\"poplar\"", False, "universal_minecraft", "wood", default="minecraft:oak_wood")

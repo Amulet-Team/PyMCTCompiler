@@ -11,7 +11,8 @@
 		"mangrove_planks",
 		"bamboo_planks",
 		"cherry_planks",
-		"pale_oak_planks"
+		"pale_oak_planks",
+		"poplar_planks"
 	],
 	"add": {
 		"planks": {
@@ -28,7 +29,8 @@
 					"\"warped\"",
 					"\"bamboo\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"poplar\""
 				]
 			},
 			"defaults": {

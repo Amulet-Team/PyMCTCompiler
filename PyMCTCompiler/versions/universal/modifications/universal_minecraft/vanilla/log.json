@@ -23,7 +23,9 @@
 		"cherry_log",
 		"stripped_cherry_log",
 		"pale_oak_log",
-		"stripped_pale_oak_log"
+		"stripped_pale_oak_log",
+		"poplar_log",
+		"stripped_poplar_log"
 	],
 	"add": {
 		"log": {
@@ -40,7 +42,8 @@
 					"\"warped\"",
 					"\"bamboo\"",
 					"\"cherry\"",
-					"\"pale_oak\""
+					"\"pale_oak\"",
+					"\"poplar\""
 				],
 				"axis": [
 					"\"x\"",
