@@ -1,15 +1,13 @@
 {
 	"to_universal": [
 		{
+			"function": "new_block",
+			"options": "universal_minecraft:piston_head"
+		},
+		{
 			"function": "map_properties",
 			"options": {
 				"type": {
-					"\"normal\"": [
-						{
-							"function": "new_block",
-							"options": "universal_minecraft:piston_head"
-						}
-					],
 					"\"sticky\"": [
 						{
 							"function": "new_block",
