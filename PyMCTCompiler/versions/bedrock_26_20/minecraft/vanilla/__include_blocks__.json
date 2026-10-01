@@ -35,5 +35,9 @@
     "sulfur": "sulfur",
     "sulfur_bricks": "sulfur_bricks",
 
-    "potent_sulfur": ["potent_sulfur_26_20", ">nbt.potent_sulfur.b2620"]
+    "potent_sulfur": ["potent_sulfur_26_20", ">nbt.potent_sulfur.b2620"],
+
+    "command_block": ["command_block", ">nbt.command_block.b2620"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2620"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2620"]
 }

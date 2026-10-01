@@ -41,5 +41,9 @@
 	"sniffer_egg": "sniffer_egg",
 
 	"sculk_sensor": [">nbt.sculk_sensor.b119", "sculk_sensor_20"],
-	"calibrated_sculk_sensor": [">nbt.sculk_sensor.calibrated_b120", "calibrated_sculk_sensor_20"]
+	"calibrated_sculk_sensor": [">nbt.sculk_sensor.calibrated_b120", "calibrated_sculk_sensor_20"],
+
+	"command_block": ["command_block", ">nbt.command_block.b20"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b20"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b20"]
 }

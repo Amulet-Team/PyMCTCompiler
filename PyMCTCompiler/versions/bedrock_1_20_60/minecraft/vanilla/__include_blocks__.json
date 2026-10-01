@@ -35,5 +35,9 @@
     "hard_white_stained_glass_pane": "hard_white_stained_glass_pane",
     "hard_yellow_stained_glass_pane": "hard_yellow_stained_glass_pane",
 
-    "trial_spawner": [">nbt.trial_spawner.b21", "trial_spawner_"]
+    "trial_spawner": [">nbt.trial_spawner.b21", "trial_spawner_"],
+
+    "command_block": ["command_block", ">nbt.command_block.b2060"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2060"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2060"]
 }

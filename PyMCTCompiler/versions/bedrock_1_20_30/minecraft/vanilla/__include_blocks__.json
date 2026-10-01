@@ -141,5 +141,9 @@
     "unpowered_comparator": [">nbt.comparator.b113", "unpowered_comparator_20_30"],
     "powered_comparator": [">nbt.comparator.b113", "powered_comparator_20_30"],
     "unpowered_repeater": "unpowered_repeater_20_30",
-    "powered_repeater": "powered_repeater_20_30"
+    "powered_repeater": "powered_repeater_20_30",
+
+    "command_block": ["command_block", ">nbt.command_block.b2030"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2030"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2030"]
 }

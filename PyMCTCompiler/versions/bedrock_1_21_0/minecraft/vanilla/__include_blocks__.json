@@ -48,5 +48,9 @@
     "yellow_flower": "yellow_flower_21",
 
     "trial_spawner": [">nbt.trial_spawner.b21", "trial_spawner"],
-    "vault": [">nbt.vault.b21", "vault"]
+    "vault": [">nbt.vault.b21", "vault"],
+
+    "command_block": ["command_block", ">nbt.command_block.b21"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b21"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b21"]
 }
