@@ -13,5 +13,9 @@
 	"stickyPistonArmCollision": "stickyPistonArmCollisionPatch",
 	"sticky_piston_arm_collision": "sticky_piston_arm_collision",
 	"tripWire": "tripWirePatch",
-	"trip_wire": "trip_wire"
+	"trip_wire": "trip_wire",
+
+	"command_block": ["command_block", ">nbt.command_block.b1830"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1830"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1830"]
 }

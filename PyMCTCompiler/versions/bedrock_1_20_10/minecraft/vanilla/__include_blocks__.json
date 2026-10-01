@@ -36,5 +36,9 @@
     "white_shulker_box": ["white_shulker_box", ">nbt.shulker_box.b113"],
     "yellow_shulker_box": ["yellow_shulker_box", ">nbt.shulker_box.b113"],
 
-    "observer": "observer_120"
+    "observer": "observer_120",
+
+    "command_block": ["command_block", ">nbt.command_block.b2010"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2010"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2010"]
 }

@@ -97,5 +97,9 @@
 	"weathered_cut_copper_slab": "weathered_cut_copper_slab_19",
 	"weathered_double_cut_copper_slab": "weathered_double_cut_copper_slab_19",
 
-	"flower_pot": ["flower_pot", ">nbt.flower_pot.b119"]
+	"flower_pot": ["flower_pot", ">nbt.flower_pot.b119"],
+
+	"command_block": ["command_block", ">nbt.command_block.b19"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b19"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b19"]
 }

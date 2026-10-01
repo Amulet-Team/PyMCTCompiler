@@ -1,4 +1,8 @@
 {
     "potent_sulfur": ["potent_sulfur_26_30", ">nbt.potent_sulfur.b2620"],
-    "sulfur_spike": "sulfur_spike"
+    "sulfur_spike": "sulfur_spike",
+
+    "command_block": ["command_block", ">nbt.command_block.b2630"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2630"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2630"]
 }

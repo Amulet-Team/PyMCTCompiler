@@ -6,5 +6,9 @@
     "tall_dry_grass": "tall_dry_grass",
 
     "leaf_litter": "leaf_litter",
-    "wildflowers":  "wildflowers"
+    "wildflowers":  "wildflowers",
+
+    "command_block": ["command_block", ">nbt.command_block.b2170"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2170"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2170"]
 }

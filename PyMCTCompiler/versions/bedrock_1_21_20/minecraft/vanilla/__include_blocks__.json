@@ -135,5 +135,9 @@
 
     "yellow_flower": null,
     "dandelion": "dandelion",
-    "flower_pot": ["flower_pot", ">nbt.flower_pot.b12120"]
+    "flower_pot": ["flower_pot", ">nbt.flower_pot.b12120"],
+
+    "command_block": ["command_block", ">nbt.command_block.b2120"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2120"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2120"]
 }

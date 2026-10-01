@@ -2,5 +2,9 @@
 	"bamboo_block": "bamboo_block",
 	"stripped_bamboo_block": "stripped_bamboo_block",
 
-	"chiseled_bookshelf": [">nbt.chiseled_bookshelf.b120", "chiseled_bookshelf"]
+	"chiseled_bookshelf": [">nbt.chiseled_bookshelf.b120", "chiseled_bookshelf"],
+
+	"command_block": ["command_block", ">nbt.command_block.b1960"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1960"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1960"]
 }

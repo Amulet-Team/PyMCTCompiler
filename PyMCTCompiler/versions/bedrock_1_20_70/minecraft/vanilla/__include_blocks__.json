@@ -53,5 +53,9 @@
     "oak_double_slab": "oak_double_slab",
     "spruce_double_slab": "spruce_double_slab",
 
-    "vault": [">nbt.vault.b21", "vault_"]
+    "vault": [">nbt.vault.b21", "vault_"],
+
+    "command_block": ["command_block", ">nbt.command_block.b2070"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b2070"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b2070"]
 }

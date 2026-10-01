@@ -46,5 +46,9 @@
 	"mangrove_hanging_sign": [">nbt.sign.hanging_b120", "mangrove_hanging_sign_20"],
 	"oak_hanging_sign": [">nbt.sign.hanging_b120", "oak_hanging_sign_20"],
 	"spruce_hanging_sign": [">nbt.sign.hanging_b120", "spruce_hanging_sign_20"],
-	"warped_hanging_sign": [">nbt.sign.hanging_b120", "warped_hanging_sign_20"]
+	"warped_hanging_sign": [">nbt.sign.hanging_b120", "warped_hanging_sign_20"],
+
+	"command_block": ["command_block", ">nbt.command_block.b1950"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1950"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1950"]
 }

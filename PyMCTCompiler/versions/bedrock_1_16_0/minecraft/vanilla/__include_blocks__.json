@@ -120,5 +120,9 @@
 	"piston_arm_collision": "pistonArmCollisionPatch",
 	"sea_lantern": "seaLanternPatch",
 	"sticky_piston_arm_collision": "stickyPistonArmCollisionPatch",
-	"trip_wire": "tripWirePatch"
+	"trip_wire": "tripWirePatch",
+
+	"command_block": ["command_block", ">nbt.command_block.b16"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b16"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b16"]
 }

@@ -59,5 +59,9 @@
 	"pink_petals": "pink_petals",
 	"suspicious_gravel": [">nbt.brushable_block.b120_gravel", "suspicious_gravel"],
 
-	"flower_pot": ["flower_pot", ">nbt.flower_pot.b11980"]
+	"flower_pot": ["flower_pot", ">nbt.flower_pot.b11980"],
+
+	"command_block": ["command_block", ">nbt.command_block.b1980"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1980"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1980"]
 }

@@ -1,3 +1,7 @@
 {
-	"glow_lichen": "glow_lichen_11810"
+	"glow_lichen": "glow_lichen_11810",
+
+	"command_block": ["command_block", ">nbt.command_block.b1810"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1810"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1810"]
 }

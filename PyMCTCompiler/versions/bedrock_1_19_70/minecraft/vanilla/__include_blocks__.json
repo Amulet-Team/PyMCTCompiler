@@ -29,5 +29,9 @@
 	"decorated_pot": [">nbt.decorated_pot.b120", "decorated_pot"],
 	"suspicious_sand": [">nbt.brushable_block.b120_sand", "suspicious_sand"],
 	"torchflower": "torchflower",
-	"torchflower_crop": "torchflower_crop"
+	"torchflower_crop": "torchflower_crop",
+
+	"command_block": ["command_block", ">nbt.command_block.b1970"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b1970"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b1970"]
 }

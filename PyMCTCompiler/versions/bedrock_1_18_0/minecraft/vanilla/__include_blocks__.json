@@ -1,0 +1,5 @@
+{
+	"command_block": ["command_block", ">nbt.command_block.b18"],
+	"repeating_command_block": ["repeating_command_block", ">nbt.command_block.b18"],
+	"chain_command_block": ["chain_command_block", ">nbt.command_block.b18"]
+}
