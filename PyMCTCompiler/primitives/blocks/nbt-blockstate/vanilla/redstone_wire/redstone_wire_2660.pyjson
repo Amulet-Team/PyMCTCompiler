@@ -1,0 +1,72 @@
+{
+    "to_universal": [
+        {
+            "function": "new_block",
+            "options": "universal_minecraft:redstone_wire"
+        },
+        {
+            "function": "map_properties",
+            "options": {
+                "redstone_signal": {
+                    str(power): [
+                        {
+                            "function": "new_properties",
+                            "options": {
+                                "power": f"\"{power}\""
+                            }
+                        }
+                    ] for power in range(16)
+                },
+                **{
+                    f"redstone_{direction}": {
+                        shape: [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    direction: shape
+                                }
+                            }
+                        ] for shape in ["\"none\"", "\"side\"", "\"up\""]
+                    }
+                    for direction in ["north", "east", "south", "west"]
+                }
+            }
+        },
+    ],
+    "from_universal": {
+        "universal_minecraft:redstone_wire": [
+            {
+                "function": "new_block",
+                "options": "minecraft:redstone_wire"
+            },
+            {
+                "function": "map_properties",
+                "options": {
+                    "power": {
+                        f"\"{power}\"": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "redstone_signal": str(power)
+                                }
+                            }
+                        ] for power in range(16)
+                    },
+                    **{
+                        direction: {
+                            shape: [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        f"redstone_{direction}": shape
+                                    }
+                                }
+                            ] for shape in ["\"none\"", "\"side\"", "\"up\""]
+                        }
+                        for direction in ["north", "east", "south", "west"]
+                    }
+                }
+            }
+        ]
+    }
+}
