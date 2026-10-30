@@ -1,0 +1,136 @@
+{
+    "minecraft:chorus_plant": {
+        "properties_added": {
+            "minecraft:connection_down": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_up": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:disc_press": {
+        "block_added": {
+            "defaults": {
+                "minecraft:cardinal_direction": "\"south\""
+            },
+            "properties": {
+                "minecraft:cardinal_direction": [
+                    "\"south\"",
+                    "\"west\"",
+                    "\"north\"",
+                    "\"east\""
+                ]
+            }
+        }
+    },
+    "minecraft:fire": {
+        "properties_added": {
+            "minecraft:connection_east": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_north": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_south": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_up": [
+                "0b",
+                "1b"
+            ],
+            "minecraft:connection_west": [
+                "0b",
+                "1b"
+            ]
+        }
+    },
+    "minecraft:ice_crystal": {
+        "block_added": {
+            "defaults": {
+                "minecraft:block_face": "\"down\""
+            },
+            "properties": {
+                "minecraft:block_face": [
+                    "\"down\"",
+                    "\"up\"",
+                    "\"north\"",
+                    "\"south\"",
+                    "\"west\"",
+                    "\"east\""
+                ]
+            }
+        }
+    },
+    "minecraft:icicle": {
+        "block_added": {
+            "defaults": {
+                "attached_bit": "0b",
+                "dripstone_thickness": "\"tip\"",
+                "hanging": "0b"
+            },
+            "properties": {
+                "attached_bit": [
+                    "0b",
+                    "1b"
+                ],
+                "dripstone_thickness": [
+                    "\"tip\"",
+                    "\"frustum\"",
+                    "\"middle\"",
+                    "\"base\"",
+                    "\"merge\""
+                ],
+                "hanging": [
+                    "0b",
+                    "1b"
+                ]
+            }
+        }
+    },
+    "minecraft:redstone_wire": {
+        "properties_added": {
+            "redstone_east": [
+                "\"none\"",
+                "\"side\"",
+                "\"up\""
+            ],
+            "redstone_north": [
+                "\"none\"",
+                "\"side\"",
+                "\"up\""
+            ],
+            "redstone_south": [
+                "\"none\"",
+                "\"side\"",
+                "\"up\""
+            ],
+            "redstone_west": [
+                "\"none\"",
+                "\"side\"",
+                "\"up\""
+            ]
+        }
+    }
+}
